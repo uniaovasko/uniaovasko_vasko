@@ -19,7 +19,7 @@ título da base | link | breve descrição
 ## Modelo Conceitual
 
 > Coloque aqui a imagem do modelo conceitual em ER ou UML, como o exemplo a seguir:
-> (images/er-projeto-1.png)
+> <img src="images/er-projeto-1.jpeg" width="400px" height="auto">
 
 ## Modelos Lógicos
 
