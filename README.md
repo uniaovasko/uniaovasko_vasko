@@ -1,4 +1,4 @@
-# Projeto `<Título do Projeto>`
+# Projeto `Culinária ao Redor do Mundo: Análise de Receitas`
 
 # Equipe `uniaovasko`
 * `Breno Shigeki Guimarães Nishimoto` - `220599`
