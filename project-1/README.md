@@ -1,7 +1,7 @@
 # Apresentação do Projeto 1 - Modelo Conceitual e Lógico
 
 ## Slides da Apresentação
-> https://docs.google.com/presentation/d/1vylYykQhYQLGgPwWaCWOoTA-l8SkZ85MtVcZka2_8sY/edit#slide=id.g1e7aee4dba9_1_17
+> https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-1/images/Projeto%20Parte%201.pdf
 
 ## Motivação e Contexto
 
