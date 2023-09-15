@@ -22,9 +22,6 @@ título da base | link | breve descrição
 
 ## Modelos Lógicos
 
-> Coloque aqui o modelo lógico relacional dos bancos de dados relacionados ao modelos conceitual. Sugere-se o formato a seguir.
-
-> Exemplo de modelo lógico relacional
 ~~~
 Ingrediente(Nome, Grupo, Subgrupo)
 Receita(ID, Regiao)
@@ -39,7 +36,6 @@ Constitui(Nome_Ingrediente, Nome_Composto, Quantidade, Unidade)
 Define(Nome_Ingrediente, Nome_Macronutriente, Quantidade, Unidade)
 	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
 	Nome_Macronutriente chave estrangeira -> Macronutriente(Nome)
-
 ~~~
 
 ## Perguntas de Pesquisa/Análise
