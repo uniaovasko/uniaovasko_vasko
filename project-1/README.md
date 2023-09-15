@@ -19,7 +19,7 @@ título da base | link | breve descrição
 ## Modelo Conceitual
 
 > Coloque aqui a imagem do modelo conceitual em ER ou UML, como o exemplo a seguir:
-> ![ER Taxi](images/er-projeto-1.png)
+> (images/er-projeto-1.png)
 
 ## Modelos Lógicos
 
