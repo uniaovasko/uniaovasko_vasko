@@ -13,7 +13,7 @@
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`FooDB` | `https://foodb.ca` | `FooDB é uma grande base de dados sobre alimentos, sua química, seus ingredientes e nutrientes.`
+`FooDB` | `https://foodb.ca` | `FooDB representa uma ampla e abrangente fonte de informações sobre alimentos, abordando detalhes relacionados à química dos alimentos, sua composição de ingredientes e os diversos nutrientes que contêm.`
 `CulinaryDB` | `https://cosylab.iiitd.edu.in/culinarydb/` | `CulinaryDB é um extenso depósito de informações sobre pratos culinários e seus componentes. Dentro deste vasto banco de dados, encontram-se mais de 40 mil receitas, cada uma com detalhes que incluem sua região de procedência, dentre as 20 regiões catalogadas, assim como o nome e a lista completa de ingredientes utilizados.`
 
 ## Modelo Conceitual
