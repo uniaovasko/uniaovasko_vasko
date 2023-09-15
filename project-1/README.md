@@ -13,7 +13,8 @@
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`<título da base>` | `<link para a página da base>` | `<breve descrição da base>`
+`FooDB` | `https://foodb.ca` | `FooDB é uma grande base de dados sobre alimentos, sua química, seus ingredientes e nutrientes.`
+`CulinaryDB` | `https://cosylab.iiitd.edu.in/culinarydb/` | `CulinaryDB é um extenso depósito de informações sobre pratos culinários e seus componentes. Dentro deste vasto banco de dados, encontram-se mais de 40 mil receitas, cada uma com detalhes que incluem sua região de procedência, dentre as 20 regiões catalogadas, assim como o nome e a lista completa de ingredientes utilizados.`
 
 ## Modelo Conceitual
 
@@ -38,17 +39,17 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 #### Pergunta/Análise 1
 > * Quais as estruturas bioquímicas mais frequentes em cada região?
 >   
->   * Por meio do CulinaryDB é possível identificar as receitas de cada região e seus ingredientes. Com esses ingredientes, por meio do FoodDB será identificado as estruturas bioquímicas mais frequentes de cada região. Essa pergunta é importante pois a bioquímica dos alimentos é uma importante ferramenta para estudo para saúde pública, pois identifica estruturas que são mais comuns e mais raras para os diferentes povos do mundo.
+>   * Por meio do CulinaryDB é possível identificar as receitas de cada região e seus ingredientes. Com esses ingredientes, por meio do FooDB será identificado as estruturas bioquímicas mais frequentes de cada região. Essa pergunta é importante pois a bioquímica dos alimentos é uma importante ferramenta para estudo para saúde pública, pois identifica estruturas que são mais comuns e mais raras para os diferentes povos do mundo.
 
 #### Pergunta/Análise 2
-> *Quais regiões possuem receitas com ingredientes majoritariamente vegetais?
+> * Quais regiões possuem receitas com ingredientes majoritariamente vegetais?
 >   
 >   * Mantendo o mesmo modelo da pergunta 1, com os ingredientes de cada receita é possível identificar os subgrupos a qual pertencem. Assim é possível analisar como cada região se relaciona com as produções alimentícias locais.
 
 #### Pergunta/Análise 3
 > * Quais regiões possuem a maior média de gorduras por receita?
 >   
->   * Utilizando os valores nutricionais de cada ingrediente, fornecido pelo FoodDB, é possível identificar a proporção de gordura contida na receita. Com essa informação será possível estabelecer uma média de lipídios em cada região. É uma pergunta importante visto que na atualidade a obesidade é um grande problema.
+>   * Utilizando os valores nutricionais de cada ingrediente, fornecido pelo FooDB, é possível identificar a proporção de gordura contida na receita. Com essa informação será possível estabelecer uma média de lipídios em cada região. É uma pergunta importante visto que na atualidade a obesidade é um grande problema.
 
 ### Perguntas/Análise Propostas mas Não Implementadas
 
