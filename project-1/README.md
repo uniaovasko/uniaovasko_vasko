@@ -26,9 +26,20 @@ título da base | link | breve descrição
 
 > Exemplo de modelo lógico relacional
 ~~~
-PESSOA(_Código_, Nome, Telefone)
-ARMÁRIO(_Código_, Tamanho, Ocupante)
-  Ocupante chave estrangeira -> PESSOA(Código)
+Ingrediente(Nome, Grupo, Subgrupo)
+Receita(ID, Regiao)
+Composto(Nome, estrutura)
+Macronutriente(Nome)
+Contem(Receita_ID, Nome_Ingrediente)
+	Receita_ID chave estrangeira -> Receita(ID)
+	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
+Constitui(Nome_Ingrediente, Nome_Composto, Quantidade, Unidade)
+	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
+	Nome_Composto chave estrangeira -> Composto(Nome)
+Define(Nome_Ingrediente, Nome_Macronutriente, Quantidade, Unidade)
+	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
+	Nome_Macronutriente chave estrangeira -> Macronutriente(Nome)
+
 ~~~
 
 ## Perguntas de Pesquisa/Análise
