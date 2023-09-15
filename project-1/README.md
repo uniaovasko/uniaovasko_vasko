@@ -18,7 +18,7 @@ título da base | link | breve descrição
 
 ## Modelo Conceitual
 
-> <img src="images/er-projeto-1.png" width="400px" height="auto">
+> <img src="images/er_projeto-1.png" width="400px" height="auto">
 
 ## Modelos Lógicos
 
