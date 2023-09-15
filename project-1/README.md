@@ -5,7 +5,8 @@
 
 ## Motivação e Contexto
 
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
+> O tema do projeto foi definido como “O que as pessoas comem ao redor do mundo”. A ideia para o projeto surgiu de uma análise do sistema de comida a quilo brasileiro, em que uma mesma fileira de pratos possuem alimentos de receitas de origens diversas, como o spaghetti italiano ao lado do sushi japonês que por sua vez está ao lado do kibe, que possui origens no Oriente Médio. Diante tal situação, chegamos a diversas perguntas como “o quão semelhante pode ser uma refeição entre as diversas regiões do mundo?” e “como essa diversidade de pratos molda a dieta macromolecular de cada povo?”.
+
 
 ## Bases de Dados
 > Elencar as bases de dados fonte utilizadas no projeto.
@@ -35,29 +36,29 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 > Liste aqui as perguntas de pesquisa/análise. Nem todas as perguntas precisam de implementação associada. É possível haver perguntas em que a solução é apenas descrita para demonstrar o potencial da base. Abaixo são ilustradas três perguntas, mas pode ser um número maior a critério da equipe.
 
 #### Pergunta/Análise 1
-> * Pergunta 1
+> * Quais as estruturas bioquímicas mais frequentes em cada região?
 >   
->   * Explicação sucinta da análise que será feita.
+>   * Por meio do CulinaryDB é possível identificar as receitas de cada região e seus ingredientes. Com esses ingredientes, por meio do FoodDB será identificado as estruturas bioquímicas mais frequentes de cada região. Essa pergunta é importante pois a bioquímica dos alimentos é uma importante ferramenta para estudo para saúde pública, pois identifica estruturas que são mais comuns e mais raras para os diferentes povos do mundo.
 
 #### Pergunta/Análise 2
-> * Pergunta 2
+> *Quais regiões possuem receitas com ingredientes majoritariamente vegetais?
 >   
->   * Explicação sucinta da análise que será feita.
+>   * Mantendo o mesmo modelo da pergunta 1, com os ingredientes de cada receita é possível identificar os subgrupos a qual pertencem. Assim é possível analisar como cada região se relaciona com as produções alimentícias locais.
 
 #### Pergunta/Análise 3
-> * Pergunta 3
+> * Quais regiões possuem a maior média de gorduras por receita?
 >   
->   * Explicação sucinta da análise que será feita.
+>   * Utilizando os valores nutricionais de cada ingrediente, fornecido pelo FoodDB, é possível identificar a proporção de gordura contida na receita. Com essa informação será possível estabelecer uma média de lipídios em cada região. É uma pergunta importante visto que na atualidade a obesidade é um grande problema.
 
 ### Perguntas/Análise Propostas mas Não Implementadas
 
 #### Pergunta/Análise 1
-> * Pergunta 1
+> * Existem similaridades entre as receitas das mais diversas regiões do globo?
 >   
 >   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
 
 #### Pergunta/Análise 2
-> * Pergunta 2
+> * Quais regiões com maior diversidade de subgrupos alimentícios?
 >   
 >   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
 
