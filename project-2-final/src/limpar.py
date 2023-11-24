@@ -3,8 +3,11 @@ import csv
 def limpa_compound():
     with open('data/external/Compound.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
+        header = ["id", "nome"]
+        next(csv_reader, None)
         with open('data/processed/compostos.csv', mode='w') as new_csv_file:
             csv_writer = csv.writer(new_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            csv_writer.writerow(header)
             for row in csv_reader:
                 csv_writer.writerow([row[0], row[2]])
 
@@ -17,8 +20,11 @@ def limpa_compound():
 def limpa_nutrient():
     with open('data/external/Nutrient.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
+        header = ["id", "nome"]
+        next(csv_reader, None)
         with open('data/processed/nutrientes.csv', mode='w') as new_csv_file:
             csv_writer = csv.writer(new_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            csv_writer.writerow(header)
             for row in csv_reader:
                 csv_writer.writerow([row[0], row[4]])
 
@@ -31,8 +37,11 @@ def limpa_nutrient():
 def limpa_receita():
     with open('data/external/01_Recipe_Details.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
+        header = ["id", "titulo", "regiao"]
+        next(csv_reader, None)
         with open('data/processed/receitas.csv', mode='w') as new_csv_file:
             csv_writer = csv.writer(new_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            csv_writer.writerow(header)
             for row in csv_reader:
                 csv_writer.writerow([row[0], row[1], row[3]])
 
@@ -44,3 +53,5 @@ def limpa_receita():
 
 if __name__ == "__main__":
     limpa_nutrient()
+    limpa_compound()
+    limpa_receita()
