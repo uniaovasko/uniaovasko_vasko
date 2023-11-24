@@ -18,7 +18,7 @@ def ligar_ingredientes():
                     sem_par.remove(ing_cdb["Aliased Ingredient Name"])
                     if ing_cdb["Aliased Ingredient Name"] in pares.keys():
                         print(f"{ing_cdb['Aliased Ingredient Name']} de {pares[ing_cdb['Aliased Ingredient Name']]} para {ing_fdb['name']}")
-                    pares[ing_cdb["Aliased Ingredient Name"]] = ing_fdb["name"]
+                    pares[ing_cdb["Aliased Ingredient Name"]] = (ing_fdb["id"], ing_fdb["name"])
                 else:
                     alt_list = ing_cdb["Ingredient Synonyms"].split("; ")
         print(len(sem_par) ,sem_par)

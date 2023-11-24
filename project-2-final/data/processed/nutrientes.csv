@@ -1,40 +1,40 @@
-id,type
-1,
-2,
-3,
-4,
-5,
-6,
-7,
-8,
-9,
-10,
-11,
-12,
-13,
-14,
-15,
-16,
-17,
-18,
-19,
-20,
-21,
-22,
-23,
-24,
-25,
-26,
-27,
-28,
-29,
-30,
-31,
-32,
-33,
-34,
-35,
-36,
-37,
-38,
-39,
+id,name
+1,Fat
+2,Proteins
+3,Carbohydrate
+4,Fatty acids
+5,Fiber (dietary)
+6,13:0
+7,14:1
+8,15:1
+9,16:1 c
+10,16:1 t
+11,16:1 undifferentiated
+12,17:1
+13,18:1 c
+14,18:1 t
+15,18:1 undifferentiated
+16,18:2 CLAs
+17,18:2 i
+18,18:2 t not further defined
+19,"18:2 t,t"
+20,18:2 undifferentiated
+21,18:3 undifferentiated
+22,18:3i
+23,18:4
+24,20:1
+25,"20:2 n-6 c,c"
+26,20:3 n-3
+27,20:3 n-6
+28,20:3 undifferentiated
+29,20:4 undifferentiated
+30,21:5
+31,22:0
+32,22:1 c
+33,22:1 t
+34,22:1 undifferentiated
+35,22:4
+36,22:5 n-3
+37,24:1 c
+38,Energy
+39,Ash

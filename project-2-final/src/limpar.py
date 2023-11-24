@@ -20,7 +20,7 @@ def limpa_nutrient():
         with open('data/processed/nutrientes.csv', mode='w') as new_csv_file:
             csv_writer = csv.writer(new_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             for row in csv_reader:
-                csv_writer.writerow([row[0], row[2]])
+                csv_writer.writerow([row[0], row[4]])
 
     #checando os prieiros 10 elementos do novo arquivo
     # with open('data/processed/Nutrient.csv') as csv_file:
@@ -41,3 +41,6 @@ def limpa_receita():
     #     csv_reader = csv.reader(csv_file, delimiter=',')
     #     for i in range(10):
     #         print(next(csv_reader))
+
+if __name__ == "__main__":
+    limpa_nutrient()
