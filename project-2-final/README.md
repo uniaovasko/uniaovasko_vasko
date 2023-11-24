@@ -52,7 +52,7 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 ## Slides
 
 ### Apresentação Prévia
-> Coloque aqui o link para o PDF da apresentação prévia
+> https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-2-final/slides/Projeto%20Parte%201.pdf
 
 ### Apresentação Final
 > Coloque aqui o link para o PDF da apresentação final
@@ -60,7 +60,7 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 ## Modelo Conceitual
 
 > Coloque aqui a imagem do modelo conceitual final em ER ou UML, como o exemplo a seguir:
-> <img src="project-2-final\assets\diagrama_conceitual_atualizado.png" width="400px" height="auto">
+> <img src="assets\diagrama_conceitual_atualizado.png" width="400px" height="auto">
 
 ## Modelos Lógicos
 
