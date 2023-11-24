@@ -1,8 +1,11 @@
 import csv
 import textdistance
+from limpar import *
 
 def main():
-    pass
+    limpa_compound()
+    limpa_nutrient()
+    limpa_receita()
 
 
 
