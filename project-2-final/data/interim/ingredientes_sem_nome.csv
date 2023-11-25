@@ -1,0 +1,294 @@
+id_cdb,nome_cdb,id_fdb,nome_fdb
+0,Egg
+2,Bread
+4,Wheaten Bread
+6,Wholewheat Bread
+7,Wort
+8,Arrack
+10,Bantu Beer
+11,Brandy
+12,Anise Brandy
+13,Apple Brandy
+14,Armagnac Brandy
+15,Blackberry Brandy
+16,Cherry Brandy
+17,Cognac Brandy
+18,Papaya Brandy
+19,Pear Brandy
+20,Plum Brandy
+21,Raspberry Brandy
+22,Weinbrand Brandy
+26,Bourbon Whisky
+27,Canadian Whisky
+28,Finnish Whisky
+29,Japanese Whisky
+30,Malt Whisky
+31,Scotch
+32,Wine
+33,Bilberry Wine
+34,Botrytized Wine
+35,Champagne
+36,Cider
+37,Plum Wine
+43,Sparkling Wine
+44,Strawberry Wine
+50,Roibos Tea
+52,Crispbread
+53,Malt
+54,Oats
+59,Sweetcorn
+64,Camembert Cheese
+66,Comte Cheese
+68,Cream Cheese
+69,Domiati Cheese
+70,Emmental Cheese
+71,Feta Cheese
+72,Goat Cheese
+73,Gruyere Cheese
+74,Limburger Cheese
+76,Munster Cheese
+79,Provolone Cheese
+80,Romano Cheese
+81,Roquefort Cheese
+82,Russian Cheese
+83,Sheep Cheese
+85,Tilsit Cheese
+87,Ghee
+88,Milk
+89,Milk Fat
+90,Goat Milk
+91,Milk Powder
+92,Sheep Milk
+93,Skimmed Milk
+95,Achilleas
+96,Arar
+97,Buchu
+98,Cajeput
+99,Camphor
+100,Cascarilla
+101,Cedar
+102,Chamomile
+103,Citronella Oil
+104,Citrus Peel Oil
+105,Eucalyptus Oil
+106,Fir
+107,Geranium
+108,Grapefruit Peel Oil
+109,Grass
+110,Hops Oil
+111,Hyacinth
+112,Hyssop Oil
+114,Lemon Peel Oil
+115,Lime Peel Oil
+117,Mandarin Orange Peel Oil
+118,Mastic Gum
+119,Mentha Oil
+120,Myrrh
+121,Neroli Oil
+122,Orange Oil
+123,Orris
+124,Clary Sage
+125,Red Sage
+126,Spanish Sage
+127,Sandalwood
+128,Sea Buckthorns
+129,Sweet Grass
+130,Valerian
+131,Wattle
+132,Yarrow
+133,Ylang-Ylang
+138,Krill
+139,Lobster
+140,Mollusc
+141,Oyster
+142,Prawn
+144,Shellfish
+146,Trassi
+148,Bonito
+149,Caviar
+150,Codfish
+151,Fish
+152,Fatty Fish
+153,Lean Fish
+155,Smoked Fish
+156,Salmon
+157,Artichoke
+158,Champaca
+159,Jasmine
+160,Lavendar
+161,Rose
+163,Apple Sauce
+166,Babaco
+168,Beli
+169,Byrsonima crassifolia
+170,Cashew Apple
+173,Currant
+174,Black Currant
+175,Red Currant
+176,White Currant
+177,Dates
+184,Hogplum
+186,Kiwifruit
+187,Litchi
+189,Malay Apple
+191,Melon
+192,Musk Melon
+194,Orange
+195,Bitter Orange
+197,Mountain Papaya
+198,Passionfruit
+199,Yellow Passionfruit
+200,Pawpaw
+203,Bartlett Pear
+205,Pepino
+207,Plum
+208,Plumcot
+209,Pumpkin
+211,Chinese Quince
+212,Raisin
+213,Roseapple
+216,Spineless Monkey Orange
+217,Starfruit
+219,Woodapple
+223,Blueberry
+224,Cherry
+225,Bitter Cherry
+229,Cranberry
+233,Raspberry
+235,Strawberry Jam
+236,Bergamot
+237,Citrus Fruits
+242,Mandarin Orange
+243,Satsuma Orange
+244,Tangerine
+247,Truffle
+249,Artemisia
+250,Basil
+251,Buckwheat
+252,Calamus
+261,Liqourice
+262,Mint
+263,Rhubarb
+265,Sage
+267,Scotch Spearmint
+269,Thyme
+270,Beef
+271,Beef Processed
+273,Frankfurter Sausage
+274,Ham
+275,Lamb
+276,Meat
+277,Mutton
+278,Pork
+279,Sukiyaki
+283,Cocoa
+284,Beans
+286,Kidney Beans
+288,Peas
+289,Soybean
+291,Soybean Sauce
+292,Filbert
+296,Pecans
+298,Muskmallow
+301,Alpinia
+302,Ceriman
+304,Hops
+305,Laurel
+306,Myrtle
+308,Pine
+309,Sassafras
+311,Fermented Tea
+312,Tobacco
+314,Creosote
+316,Macaroni
+317,Mustard Oil
+318,Peanut Butter
+321,Storax
+324,Anise Hyssop
+328,Cassia
+329,Celery
+331,Clove
+334,Mace
+335,Marjoram
+337,Oregano
+343,Chive
+348,Onion
+352,Brussels Sprout
+360,Rutabaga
+362,Capsicum
+363,Cherry Pepper
+364,Tomato
+367,Beetroot
+374,Fried Potato
+376,Asafoetida
+377,Ashgourd
+378,Bittergourd
+379,Bottlegourd
+381,Carom Seed
+382,Chard
+383,Apple Cider Vinegar
+384,Colocasia
+385,Curry Leaf
+386,Drumstick Leaf
+389,Jalapeno
+390,Kenaf
+392,Nigella Seed
+393,Kewda
+395,Poppy Seed
+397,Turkey Berry
+398,Water Chestnut
+399,White Pepper
+400,Garcinia Indica
+401,Cluster Bean
+402,Paneer
+404,Basmati Rice
+405,Ricotta Cheese
+409,Redskin onion
+507,Beaver
+511,Black bear
+520,Brown bear
+528,Caribou
+551,Wild duck
+563,Greenland halibut
+567,Hippoglossus
+589,Moose
+593,Muskrat
+600,Opossum
+614,Polar bear
+618,Raccoon
+652,Squirrel
+662,Salmonidae
+683,Clupeinae
+687,Percoidei
+693,Bivalvia
+699,Great horned owl
+737,Scombridae
+744,Pleuronectidae
+755,Common Tuna
+756,Cetacea
+757,Columbidae
+773,Drag̩e
+796,Milk Human
+826,Cichlidae
+856,Morchella
+969,Zucchini
+979,Anise Oil
+980,Apple Juice
+983,Hops Beer
+984,Lemon Juice
+985,Brown Rice
+986,Tomato Juice
+987,Tomato Paste
+988,Tomato Puree
+989,Coriander Seed
+991,Cured Ham
+992,Cayenne
+993,Yeast
+994,Tequila
+995,Sauerkraut
+996,Baking Powder
+997,Monosodium Glutamate
+998,Citric Acid
+999,Cooking Spray
+1001,Food Coloring
+1002,Liquid Smoke
