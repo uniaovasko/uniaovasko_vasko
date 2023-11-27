@@ -1,0 +1,87 @@
+id_cdb,nome_cdb,id_fdb,nome_fdb,grupo,subgrupo,aliases
+7,Wort,,,,,wort
+95,Achilleas,,,,,achillea
+96,Arar,,,,,arar
+97,Buchu,,,,,buchu
+98,Cajeput,,,,,cajeput
+99,Camphor,,,,,camphor
+100,Cascarilla,,,,,cascarilla
+101,Cedar,,,,,cedar
+103,Citronella Oil,,,,,citronella-oil
+104,Citrus Peel Oil,,,,,citrus-peel=oil
+105,Eucalyptus Oil,,,,,eucalyptus-oil
+106,Fir,,,,,fir
+107,Geranium,,,,,geranium
+109,Grass,,,,,grass
+110,Hops Oil,,,,,hops-oil
+118,Mastic Gum,,,,,mastic
+120,Myrrh,,,,,myrrh
+121,Neroli Oil,,,,,neroli-oil
+123,Orris,,,,,orris
+127,Sandalwood,,,,,sandalwood
+128,Sea Buckthorns,,,,,sea=buckthorn
+129,Sweet Grass,,,,,sweet=grass
+130,Valerian,,,,,valerian
+131,Wattle,,,,,wattle
+132,Yarrow,,,,,yarrow
+133,Ylang-Ylang,,,,,ylang=ylang-oil
+138,Krill,,,,,krill
+144,Shellfish,,,,,shellfish
+146,Trassi,,,,,shrimp-paste=dried; trassi
+149,Caviar,,,,,caviar
+151,Fish,,,,,fish; pomfret
+152,Fatty Fish,,,,,fish-fatty
+155,Smoked Fish,,,,,fish-smoked
+158,Champaca,,,,,champaca
+159,Jasmine,,,,,jasmine
+160,Lavendar,,,,,lavendar
+166,Babaco,,,,,babaco
+168,Beli,,,,,beli
+170,Cashew Apple,,,,,cashew=apple
+208,Plumcot,,,,,plumcot; aprium
+213,Roseapple,,,,,rose=apple; java=apple
+216,Spineless Monkey Orange,,,,,spineless=monkey=orange
+219,Woodapple,,,,,woodapple
+237,Citrus Fruits,,,,,citrus
+247,Truffle,,,,,truffle
+252,Calamus,,,,,calamus
+273,Frankfurter Sausage,,,,,frankfurter-sausage
+279,Sukiyaki,,,,,sukiyaki
+298,Muskmallow,,,,,musk=mallow
+301,Alpinia,,,,,alpinia
+302,Ceriman,,,,,ceriman
+304,Hops,,,,,hops
+306,Myrtle,,,,,myrtle
+309,Sassafras,,,,,sassafras
+311,Fermented Tea,,,,,tea-fermented
+312,Tobacco,,,,,tobacco
+314,Creosote,,,,,creosote
+316,Macaroni,,,,,macaroni
+317,Mustard Oil,,,,,mustard-oil
+321,Storax,,,,,storax
+376,Asafoetida,,,,,asafoetida; asafetida; hing; asant
+381,Carom Seed,,,,,carom seed; ajwain
+385,Curry Leaf,,,,,curry=leaf
+386,Drumstick Leaf,,,,,drumstick-leaf
+390,Kenaf,,,,,kenaf
+393,Kewda,,,,,kewda; kewra
+397,Turkey Berry,,,,,turkey=berry
+401,Cluster Bean,,,,,bean-cluster; bean-guar
+507,Beaver,,,,,beaver
+511,Black bear,,,,,#bear-black#
+520,Brown bear,,,,,#bear-brown#
+593,Muskrat,,,,,muskrat
+600,Opossum,,,,,opossum
+614,Polar bear,,,,,#bear-polar#
+618,Raccoon,,,,,raccoon
+652,Squirrel,,,,,squirrel
+699,Great horned owl,,,,,owl
+756,Cetacea,,,,,cetacea
+773,Drag̩e,,,,,drag̩e
+993,Yeast,,,,,yeast
+996,Baking Powder,,,,,baking powder; baking soda
+997,Monosodium Glutamate,,,,,monosodium glutamate
+998,Citric Acid,,,,,citric acid
+999,Cooking Spray,,,,,cooking spray
+1001,Food Coloring,,,,,food coloring
+1002,Liquid Smoke,,,,,liquid smoke
