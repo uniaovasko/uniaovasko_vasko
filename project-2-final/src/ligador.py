@@ -142,14 +142,39 @@ def ligar_ingrediente_receita():
     with (open("data/interim/ingredientes_final.csv") as ing_f,
           open("data/interim/ingredientes_compostos_final.csv") as ingc_f,
           open("data/processed/receitas.csv") as rec_f,
-          open("data/external/04_Recipe-Ingredients_Aliases.csv") as rec_ing_f):
+          open("data/external/04_Recipe-Ingredients_Aliases.csv") as rec_ing_f,
+          open("data/interim/ingredientes_receitas.csv", "w") as out_f):
         ing_reader = csv.DictReader(ing_f, lineterminator='\n')
         ingc_reader = csv.DictReader(ingc_f, lineterminator='\n')
         rec_reader = csv.DictReader(rec_f, lineterminator='\n')
         rec_ing_reader = csv.DictReader(rec_ing_f, lineterminator='\n')
-
-
-        ingredientes = {x["id_cdb"]: x for x in ing_reader }
+        out_writer = csv.DictWriter(out_f, fieldnames=["id_ingrediente", "id_receita", "volume", "peso", "composto"])
+        out_writer.writeheader()
+        ingredientes = { x["id_cdb"]: x for x in ing_reader }
+        ingredientes_compostos = { x["id_cdb"]: x for x in ingc_reader }
+        for rec_ing in rec_ing_reader:
+            
+            if ing := ingredientes.get(rec_ing["Entity ID"], None):
+                if True:
+                    out_writer.writerow({
+                        "id_ingrediente": ing["id_fdb"],
+                        "id_receita": rec_ing["Recipe ID"],
+                        "volume": 0,
+                        "composto": 0
+                    })
+                else:
+                    pass
+            elif ingc := ingredientes_compostos.get(rec_ing["Entity ID"], None):
+                if True:
+                    out_writer.writerow({
+                        "id_ingrediente": ingc["id_fdb"],
+                        "id_receita": rec_ing["Recipe ID"],
+                        "volume": 0,
+                        "composto": 1
+                    })
+                else:
+                    pass
+        
         
 
 if __name__ == "__main__":
