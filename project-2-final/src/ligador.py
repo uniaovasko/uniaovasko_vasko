@@ -195,7 +195,7 @@ def ligar_ingrediente_receita():
                     out_writer.writerow({
                         "id_ingrediente": ing["id_fdb"],
                         "id_receita": rec_ing["Recipe ID"],
-                        "unidade": q,
+                        "unidade": int(q),
                         "composto": 0,
                     })
             elif ingc := ingredientes_compostos.get(rec_ing["Entity ID"], False):
@@ -217,7 +217,7 @@ def ligar_ingrediente_receita():
                     out_writer.writerow({
                         "id_ingrediente": ingc["id_cdb"],
                         "id_receita": rec_ing["Recipe ID"],
-                        "unidade": q,
+                        "unidade": int(q),
                         "composto": 1,
                     })
             else:
