@@ -59,14 +59,11 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 ## Modelo Conceitual
 
-> Coloque aqui a imagem do modelo conceitual final em ER ou UML, como o exemplo a seguir:
 > <img src="assets\diagrama_conceitual_atualizado.png" width="400px" height="auto">
 
 ## Modelos Lógicos
 
-> Coloque aqui o modelo lógico relacional dos bancos de dados relacionados ao modelos conceitual. Sugere-se o formato a seguir.
-
-> Exemplo de modelo lógico relacional
+* Modelo lógico relacional
 ~~~
 Ingrediente(Nome, Grupo, Subgrupo)
 Receita(ID, Regiao)
@@ -82,12 +79,37 @@ Define(Nome_Ingrediente, Nome_Macronutriente, Quantidade, Unidade)
 	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
 	Nome_Macronutriente chave estrangeira -> Macronutriente(Nome)
 ~~~
+* Modelo lógico de grafos
+~~~
+Ingredientes-Simples(_id_, nome, grupo, subgrupo)
+Composicao-Quimica(_nome_)
+Macronutrientes(_nome_)
+Receita(_id_, nome, regiao)
+Ingrediente-Composto(_id_, nome)
+Define(_idis_, _nome-macro_, quantidade-grama)
+	idis chave estrangeira -> Ingredientes-Simples(id)
+	nome-macro chave estrangeira -> macronutrientes(nome)
+Constitui(_idis_, _nomecq_, quantidade-grama)
+	idis chave estrangeira -> Ingredientes-Simples(id)
+	nomecq chave estrangeira -> COMPOSICAOQUIMICA(nome)
+Compoe(_idis_, _idic_)
+	idis chave estrangeira -> Ingredientes-Simples(id)
+	idic chave estrangeira -> INGREDIENTECOMPOSTO(id)
+Contems(_idrec_, _idis_)
+	idirec chave estrangeira -> RECEITA(id)
+	idis chave estrangeira -> Ingredientes-Simples(id)
+Contemc(_IDrec_, _IDic_)
+	idirec chave estrangeira -> RECEITA(id)
+	idic chave estrangeira -> Ingrediente-Composto(id)
+~~~
+<!-- > ![Modelo Lógico de Grafos](assets/modelo-logico-grafos.jpeg) -->
+> <img src="assets/modelo-logico-grafos.jpeg" width="400px" height="auto">
 
 > Para o modelo de grafos de propriedades, utilize este
 > [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
 > Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
 >
-> ![Modelo Lógico de Grafos](images/modelo-logico-grafos.png)
+
 
 ## Dataset Publicado
 > Se ao tratar e integrar os dados originais foram produzidas novas bases relacionais ou de grafos, elencar essas bases.
@@ -109,18 +131,76 @@ título da base | link | breve descrição
 `CulinaryDB` | `https://cosylab.iiitd.edu.in/culinarydb/` | `CulinaryDB é um extenso depósito de informações sobre pratos culinários e seus componentes. Dentro deste vasto banco de dados, encontram-se mais de 40 mil receitas, cada uma com detalhes que incluem sua região de procedência, dentre as 20 regiões catalogadas, assim como o nome e a lista completa de ingredientes utilizados.`
 
 ## Detalhamento do Projeto
-> Apresente aqui detalhes do processo de construção do dataset e análise. Nesta seção ou na seção de Perguntas podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
-> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
 
+* Eliminação das colunas que não serão importantes na análise, para facilitar a pesquisa e melhorar a visualização dos dados. [limpar.py](src/limpar.py)
 ~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
+def limpa_compound():
+    with open('data/external/Compound.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        header = ["id", "nome"]
+        next(csv_reader, None)
+        with open('data/processed/compostos.csv', mode='w') as new_csv_file:
+            csv_writer = csv.writer(new_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+            csv_writer.writerow(header)
+            for row in csv_reader:
+                csv_writer.writerow([row[0], row[2]])
 ~~~
 
-> Se usar Orange para alguma análise, você pode apresentar uma captura do workflow, como o exemplo a seguir e descrevê-lo:
-![Workflow no Orange](images/orange-zombie-meals-prediction.png)
+~~~python
+def limpa_nutrient():
+    with open('data/external/Nutrient.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        header = ["id", "nome"]
+        next(csv_reader, None)
+        with open('data/processed/nutrientes.csv', mode='w') as new_csv_file:
+            csv_writer = csv.writer(new_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+            csv_writer.writerow(header)
+            for row in csv_reader:
+                csv_writer.writerow([row[0], row[4]])
+~~~
+
+~~~python
+def limpa_receita():
+    with open('data/external/01_Recipe_Details.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        header = ["id", "titulo", "regiao"]
+        next(csv_reader, None)
+        with open('data/processed/receitas.csv', mode='w') as new_csv_file:
+            csv_writer = csv.writer(new_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+            csv_writer.writerow(header)
+            for row in csv_reader:
+                csv_writer.writerow([row[0], row[1], row[3]])
+~~~
+
+* Extração e filtragem de ingredientes, suas quantidades e suas respectivas unidades de medidas utilizando regex. [regex.py](src/limpar.py)
+~~~python
+    with open('data/external/04_Recipe-Ingredients_Aliases.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        array = []
+        for row in csv_reader:
+            array.append(row[1])
+
+    input_strings = array[1:]
+    result = test_strings(input_strings)
+    #...
+	regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
+~~~
+
+
+* Integração dos dados de um dataset com o outro usando um algoritmo de Hamming, na qual calcula a pontuação de correspondência para duas strings de dados. [ligador.py](src/limpar.py)
+
+~~~python
+def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Aliased Ingredient Name', cdb_id='Entity ID') -> bool:
+    if (s := hamming.normalized_similarity(ing_cdb[cdb_nome].lower(), ing_fdb["name"].lower())) >= 0.85:
+        sem_par.pop(ing_cdb[cdb_id], None)
+        if ing_cdb[cdb_id] in pares.keys():
+            print(f"{ing_cdb[cdb_id], ing_cdb[cdb_nome]} de {pares[ing_cdb[cdb_id]]} para {(ing_cdb[cdb_id], ing_fdb['name'])}")
+        pares[ing_cdb[cdb_id]] = (ing_cdb[cdb_nome], ing_fdb['id'], ing_fdb["name"], ing_fdb["food_group"], ing_fdb["food_subgroup"])
+        return True
+    return False
+~~~
+
+
 
 > Coloque um link para o arquivo do notebook, programas ou workflows que executam as operações que você apresentar.
 
