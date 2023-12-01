@@ -1,6 +1,55 @@
 import csv
 import re
 
+def test_string(string):
+    regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
+
+    match = regex.match(string)
+    if match:
+        matched_group = match.groups()
+    else:
+        matched_group = None
+
+
+    new_group = []
+    if matched_group is None:
+        return [1.]
+    for item in matched_group:
+        if item:
+            new_group.append(item)
+    
+    new_group.pop(0)
+    try:
+        new_group[0] = float(new_group[0])
+    except:
+        frac = new_group[0].split('/')
+        frac = float(frac[0]) / float(frac[1])
+        new_group[0] = frac
+    if new_group[-1] == "ounce":
+        if len(new_group) == 5:
+            if new_group[1][0] == ' ':
+                frac = new_group[1].split('/')
+                frac = float(frac[0]) / float(frac[1])
+                new_group[1] = frac
+                new_group[0] = new_group[0] + float(new_group[1])
+                new_group.pop(1); new_group.pop(1)
+            else:
+                new_group.pop(-2); new_group.pop(-3)
+        elif len(new_group) == 4:
+            new_group.pop(1)
+        try:
+            new_group[0] = new_group[0] * float(new_group[1])
+            new_group.pop(1)
+        except:
+            pass
+    if len(new_group) == 3:
+        frac = new_group[1].split('/')
+        frac = float(frac[0]) / float(frac[1])
+        new_group[0] = new_group[0] + frac
+        new_group.pop(1)
+    
+    return new_group
+
 def test_strings(strings):
     # recebe array de strings de qtd de ingredientes, retorna uma lista com a quantidade em float e a unidade de medida, se houver
     regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
@@ -60,7 +109,7 @@ def test_strings(strings):
 
 # Example usage:
 def test1():
-    input_strings = ["1 1/2 (10 ounce)","1 (14 ounce)","1 tablespoon", "1 1/2 teaspoon", "2 (2.30 ounce)", "8 slices white bread, with crusts trimmed", "xablau"]
+    input_strings = ["1 1/2 (10 ounce)","1 (14 ounce)","1 tablespoon", "1 1/2 teaspoon", "2 (2.30 ounce)", "8 slices white bread, with crusts trimmed", "turkey"]
 
     result = test_strings(input_strings)
 
@@ -90,5 +139,17 @@ def test2():
             else:
                 csv_writer.writerow(["No match found"])
             csv_writer.writerow("-" * 20)
+            
+def test3():
+    input_strings = ["1 1/2 (10 ounce)","1 (14 ounce)","1 tablespoon", "1 1/2 teaspoon", "2 (2.30 ounce)", "8 slices white bread, with crusts trimmed", "turkey"]
+
+    for i in range(len(input_strings)):
+        print(f"String {i + 1}: {input_strings[i]}")
+        groups = test_string(input_strings[i])
+        if groups:
+            print(f"Matched Groups: {groups}")
+        else:
+            print("No match found")
+        print("-" * 20)
                 
-test2()
+test3()
