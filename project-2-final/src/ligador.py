@@ -1,5 +1,6 @@
 import csv
 from textdistance import hamming
+from volume import test_string
 
 def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Aliased Ingredient Name', cdb_id='Entity ID') -> bool:
     if (s := hamming.normalized_similarity(ing_cdb[cdb_nome].lower(), ing_fdb["name"].lower())) >= 0.85:
@@ -9,6 +10,20 @@ def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Alias
         pares[ing_cdb[cdb_id]] = (ing_cdb[cdb_nome], ing_fdb['id'], ing_fdb["name"], ing_fdb["food_group"], ing_fdb["food_subgroup"])
         return True
     return False
+
+def converte_pound(q):
+    return q * 453,592
+
+def calc_volume(q, u):
+    match u:
+        case "teaspoon":
+            return q * 4.92892159
+        case "tablespoon":
+            return q * 14.7867648
+        case "cup":
+            return q * 250
+        case "ounce":
+            return q * 30
 
 def ligar_ingredientes():
     with (open("data/external/02_Ingredients.csv") as ing_cdb_f,
@@ -143,37 +158,76 @@ def ligar_ingrediente_receita():
           open("data/interim/ingredientes_compostos_final.csv") as ingc_f,
           open("data/processed/receitas.csv") as rec_f,
           open("data/external/04_Recipe-Ingredients_Aliases.csv") as rec_ing_f,
-          open("data/interim/ingredientes_receitas.csv", "w") as out_f):
+          open("data/processed/ingredientes_receitas.csv", "w") as out_f,
+          open("data/interim/ing_rec_removidos.csv", "w") as removidos_f):
         ing_reader = csv.DictReader(ing_f, lineterminator='\n')
         ingc_reader = csv.DictReader(ingc_f, lineterminator='\n')
         rec_reader = csv.DictReader(rec_f, lineterminator='\n')
         rec_ing_reader = csv.DictReader(rec_ing_f, lineterminator='\n')
-        out_writer = csv.DictWriter(out_f, fieldnames=["id_ingrediente", "id_receita", "volume", "peso", "composto"])
+        out_writer = csv.DictWriter(out_f, fieldnames=["id_ingrediente", "id_receita", "volume", "massa", "unidade", "composto"], lineterminator='\n')
+        removidos_writer = csv.DictWriter(removidos_f, fieldnames=["id_ing_cdb","id_receita", "nome"])
+
         out_writer.writeheader()
+
         ingredientes = { x["id_cdb"]: x for x in ing_reader }
         ingredientes_compostos = { x["id_cdb"]: x for x in ingc_reader }
         for rec_ing in rec_ing_reader:
+            [q, u, *_] = test_string(rec_ing["Original Ingredient Name"]) + ["unit"]
+            u = u.removesuffix("s")
+            tem_volume = u != "unit" and u != "pound"
             
-            if ing := ingredientes.get(rec_ing["Entity ID"], None):
-                if True:
+            if ing := ingredientes.get(rec_ing["Entity ID"], False):
+                if tem_volume:
                     out_writer.writerow({
                         "id_ingrediente": ing["id_fdb"],
                         "id_receita": rec_ing["Recipe ID"],
-                        "volume": 0,
+                        "volume": calc_volume(q, u),
+                        "composto": 0
+                    })
+                elif u == "pound":
+                    out_writer.writerow({
+                        "id_ingrediente": ing["id_fdb"],
+                        "id_receita": rec_ing["Recipe ID"],
+                        "massa": converte_pound(q),
                         "composto": 0
                     })
                 else:
-                    pass
-            elif ingc := ingredientes_compostos.get(rec_ing["Entity ID"], None):
-                if True:
                     out_writer.writerow({
-                        "id_ingrediente": ingc["id_fdb"],
+                        "id_ingrediente": ing["id_fdb"],
                         "id_receita": rec_ing["Recipe ID"],
-                        "volume": 0,
+                        "unidade": q,
+                        "composto": 0,
+                    })
+            elif ingc := ingredientes_compostos.get(rec_ing["Entity ID"], False):
+                if tem_volume:
+                    out_writer.writerow({
+                        "id_ingrediente": ingc["id_cdb"],
+                        "id_receita": rec_ing["Recipe ID"],
+                        "volume": calc_volume(q, u),
+                        "composto": 1
+                    })
+                elif u == "pound":
+                    out_writer.writerow({
+                        "id_ingrediente": ingc["id_cdb"],
+                        "id_receita": rec_ing["Recipe ID"],
+                        "volume": converte_pound(q),
                         "composto": 1
                     })
                 else:
-                    pass
+                    out_writer.writerow({
+                        "id_ingrediente": ingc["id_cdb"],
+                        "id_receita": rec_ing["Recipe ID"],
+                        "unidade": q,
+                        "composto": 1,
+                    })
+            else:
+                removidos_writer.writerow({
+                    "id_ing_cdb": rec_ing["Entity ID"],
+                    "id_receita": rec_ing["Recipe ID"],
+                    "nome": rec_ing["Aliased Ingredient Name"]
+                })
+
+
         
         
 
