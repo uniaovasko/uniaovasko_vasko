@@ -91,25 +91,19 @@ Define(_idis_, _nome-macro_, quantidade-grama)
 	nome-macro chave estrangeira -> macronutrientes(nome)
 Constitui(_idis_, _nomecq_, quantidade-grama)
 	idis chave estrangeira -> Ingredientes-Simples(id)
-	nomecq chave estrangeira -> COMPOSICAOQUIMICA(nome)
+	nomecq chave estrangeira -> Composicao-Quimica(nome)
 Compoe(_idis_, _idic_)
 	idis chave estrangeira -> Ingredientes-Simples(id)
-	idic chave estrangeira -> INGREDIENTECOMPOSTO(id)
+	idic chave estrangeira -> Ingrediente-Composto(id)
 Contems(_idrec_, _idis_)
-	idirec chave estrangeira -> RECEITA(id)
+	idirec chave estrangeira -> Receita(id)
 	idis chave estrangeira -> Ingredientes-Simples(id)
 Contemc(_IDrec_, _IDic_)
-	idirec chave estrangeira -> RECEITA(id)
+	idirec chave estrangeira -> Receita(id)
 	idic chave estrangeira -> Ingrediente-Composto(id)
 ~~~
 <!-- > ![Modelo Lógico de Grafos](assets/modelo-logico-grafos.jpeg) -->
 > <img src="assets/modelo-logico-grafos.jpeg" width="400px" height="auto">
-
-> Para o modelo de grafos de propriedades, utilize este
-> [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
->
-
 
 ## Dataset Publicado
 > Se ao tratar e integrar os dados originais foram produzidas novas bases relacionais ou de grafos, elencar essas bases.
@@ -123,7 +117,6 @@ título do arquivo/base | link | breve descrição
 > Este é o conjunto mínimo de informações que deve constar na disponibilização do Dataset, mas a equipe pode enriquecer esta seção.
 
 ## Bases de Dados
-> Elencar as bases de dados fonte utilizadas no projeto.
 
 título da base | link | breve descrição
 ----- | ----- | -----
@@ -214,6 +207,8 @@ def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Alias
 > Se for notebook, ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src` (por exemplo, arquivos do Orange ou Cytoscape). Se as operações envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 
 ## Evolução do Projeto
+> Esse projeto se iniciou com as escolhas dos datasets que faziam sentido para as análises e pesquisas que queríamos desenvolver, com base nisso foram escolhidas as base de dados FoodDB e CulinaryDB. Na primeira versão os projeto foi apresentada uma modelagem conceitual e lógica baseado na perspectiva inicial de como seria desenvolver e aplicar as ferramentas necessárias para fazer as análises. Para a segunda versão do modelo lógico e conceitual foram feitas algumas poucas modificações que foram percebidas ao longo do desdobramento do projeto. No desenvolvimento da atividade, à princípio, tivemos dificuldades para fazer a filtragem e processamento dos elementos nas bases de dados, como por exemplo os ingredientes da base do CulinaryDB não seguiam um padrão de escrita, alguns ingredientes vinham acompanhado de quantidades e unidades de medidas, já outros não tinham essa configuração. Esse problema foi resolvido utilizando a ferramenta regex, além disso foi criada outro arquivo para armazena todas as informações de forma estruturada para serem usadas na análise. Outro entrave que tivemos no projeto foi fazer o "match" com as informações que tinhámos da base CulinaryDB com a base FoodDB em decorrência da diferença estrutural das informações entre elas, levando isso em consideração foram feitas várias consultas e buscas para superar esse obstáculo, a melhor ferramenta que encontrada foi o algoritmo chamado de Distância de Hamming. Esse algoritmo calcula uma pontuação de correspondência para duas strings de dados computando o número de posições as quais os caracteres diferem entre as strings de dados, para string de comprimento diferente, cada caractere adicional na string mais longa é contado como uma diferença entre as strings. Com esse método obtivemos uma bom percentual de match entre os ingredientes das duas bases mencionadas acima, porém alguns ingredientes obtiveram uma baixa pontuação no confronto dos dados, então tivemos que fazer o match manualmente com os ingredientes que sobraram da base CulinaryDB.
+
 > Relatório de evolução, descrevendo as evoluções na modelagem do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas, modelos e recortes de mudanças são bem-vindos.
 > Podem ser apresentados destaques na evolução dos modelos conceitual e lógico. O modelo inicial e intermediários (quando relevantes) e explicação de refinamentos, mudanças ou evolução do projeto que fundamentaram as decisões.
 > Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
