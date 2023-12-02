@@ -2,18 +2,42 @@ import csv
 import re
 
 def test_string(string):
-    regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
+    regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\)|ounces?|quarts?)?')
 
     match = regex.match(string)
     if match:
         matched_group = match.groups()
     else:
         matched_group = None
-
+    
+    
 
     new_group = []
     if matched_group is None:
         return [1.]
+    
+    print(matched_group)
+    if matched_group[4] != None and matched_group[4].removesuffix("s") == "ounce":
+        try:
+            q = int(matched_group[2])
+        except:
+            q = 0
+        if matched_group[3] != None:
+            a, b = matched_group[3].split("/", 1)
+            q += int(a) / int(b)
+        return [q, "ounce"]
+    if matched_group[7] != None and matched_group[7].removesuffix("s") == "ounce":
+        q = 0
+        if matched_group[2] != None:
+            q += int(matched_group[2])
+            if matched_group[3] != None:
+                a, b = matched_group[3].split("/", 1)
+                q += int(a) / int(b)
+        else:
+            a, b = matched_group[1].split("/", 1)
+            q += int(a) / int(b)
+        q *= float(matched_group[5])
+        return [q, "ounce"]
     for item in matched_group:
         if item:
             new_group.append(item)
@@ -141,7 +165,7 @@ def test2():
             csv_writer.writerow("-" * 20)
             
 def test3():
-    input_strings = ["1 1/2 (10 ounce)","1 (14 ounce)","1 tablespoon", "1 1/2 teaspoon", "2 (2.30 ounce)", "8 slices white bread, with crusts trimmed", "turkey"]
+    input_strings = ['1 1/2 (10.5 ounce) cans low-sodium chicken broth',"1 1/2 (10 ounce)","3 1/2 ounces high quality milk chocolate","1 (14 ounce)","1 tablespoon", "1 1/2 teaspoon", "2 (2.30 ounce)", "8 slices white bread, with crusts trimmed", "turkey", "2 quarts morango"]
 
     for i in range(len(input_strings)):
         print(f"String {i + 1}: {input_strings[i]}")
