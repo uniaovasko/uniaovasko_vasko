@@ -16,16 +16,6 @@ def test_string(string):
     if matched_group is None:
         return [1.]
     
-    print(matched_group)
-    if matched_group[4] != None and matched_group[4].removesuffix("s") == "ounce":
-        try:
-            q = int(matched_group[2])
-        except:
-            q = 0
-        if matched_group[3] != None:
-            a, b = matched_group[3].split("/", 1)
-            q += int(a) / int(b)
-        return [q, "ounce"]
     if matched_group[7] != None and matched_group[7].removesuffix("s") == "ounce":
         q = 0
         if matched_group[2] != None:

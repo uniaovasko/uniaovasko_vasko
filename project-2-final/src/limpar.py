@@ -51,7 +51,46 @@ def limpa_receita():
     #     for i in range(10):
     #         print(next(csv_reader))
 
+def limpa_content():
+    with (open("data/external/Content.csv") as content_f,
+          open("data/processed/content_nutrientes.csv", "w") as nutriente_f,
+          open("data/processed/content_compostos.csv", "w") as composto_f,
+          open("data/interim/ingredientes_final.csv") as ing_f):
+        content_reader = csv.DictReader(content_f, lineterminator='\n')
+        ing_reader = csv.DictReader(ing_f, lineterminator='\n')
+        nutriente_writer = csv.writer(nutriente_f, lineterminator='\n')
+        composto_writer = csv.writer(composto_f, lineterminator='\n')
+
+        nutriente_writer.writerow(["id_ingrediente", "id_nutriente", "quantidade"])
+        composto_writer.writerow(["id_ingrediente", "id_composto", "quantidade"])
+
+        ingredientes = { x["id_fdb"] for x in ing_reader }
+        adicionados: set[tuple[str, str]] = set()
+        nones = 0
+        zeros = 0
+        for content in content_reader:
+            if (content["food_id"], content["source_id"]) not in adicionados and content["food_id"] in ingredientes:
+                row = [content["food_id"], content["source_id"], content["orig_content"]]
+                if content["orig_content"] == "0.0":
+                    zeros += 1
+                    continue
+                elif content["orig_content"] == None or content["orig_content"] == "":
+                    nones += 1
+                    continue
+                adicionados.add((content["food_id"], content["source_id"]))
+                if content["source_type"] == "Nutrient":
+                    nutriente_writer.writerow(row)
+                else:
+                    composto_writer.writerow(row)
+        print(f"nones: {nones}, zeros: {zeros}")
+
+
+
+        
+
+
 if __name__ == "__main__":
-    limpa_nutrient()
-    limpa_compound()
-    limpa_receita()
+    # limpa_nutrient()
+    # limpa_compound()
+    # limpa_receita()
+    limpa_content()
