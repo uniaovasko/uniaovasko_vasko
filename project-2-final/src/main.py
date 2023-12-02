@@ -9,9 +9,12 @@ def main():
     limpa_receita()
     ligar_ingredientes()
     ligar_ingredientes_compostos()
+    ligar_ingredientes()
+    ligar_ingredientes_compostos()
 
 
 
 
 if __name__ == "__main__":
     main()
+    
