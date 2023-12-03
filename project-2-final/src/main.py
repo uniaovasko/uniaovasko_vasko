@@ -12,6 +12,8 @@ def main():
     ligar_ingredientes_compostos()
     finalizar_ligacao()
     ligar_ingrediente_receita()
+
+    limpa_content()
     
 
 
