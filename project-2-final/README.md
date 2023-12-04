@@ -59,7 +59,7 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 ## Modelo Conceitual
 
-> <img src="assets\diagrama_conceitual_atualizado.png" width="400px" height="auto">
+> <img src="assets\modelo_conceitual_atualizado.drawio (1).png" width="400px" height="auto">
 
 ## Modelos Lógicos
 
@@ -181,6 +181,19 @@ def limpa_receita():
     result = test_strings(input_strings)
     #...
     regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
+~~~
+
+~~~python
+with open('data/external/04_Recipe-Ingredients_Aliases.csv') as csv_file:
+	csv_reader = csv.reader(csv_file, delimiter=',')
+	array = []
+	for row in csv_reader:
+	    array.append(row[1])
+
+    input_strings = array[1:]
+    result = test_strings(input_strings)
+#...
+regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
 ~~~
 
 
