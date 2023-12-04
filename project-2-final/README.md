@@ -65,19 +65,23 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 * Modelo lógico relacional
 ~~~
-Ingrediente(Nome, Grupo, Subgrupo)
-Receita(ID, Regiao)
-Composto(Nome, estrutura)
-Macronutriente(Nome)
-Contem(Receita_ID, Nome_Ingrediente)
+IngredienteComposto(_ID_, Nome)
+IngredienteSimples(_ID_, Nome, Grupo, Subgrupo)
+Receita(_ID_, Nome, Regiao)
+CompostoQuimico(_ID_, Nome)
+Macronutriente(_ID_, Nome)
+Contem(Receita_ID, Ingrediente_ID, Volume, Unidades, Massa)
 	Receita_ID chave estrangeira -> Receita(ID)
-	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
-Constitui(Nome_Ingrediente, Nome_Composto, Quantidade, Unidade)
-	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
-	Nome_Composto chave estrangeira -> Composto(Nome)
-Define(Nome_Ingrediente, Nome_Macronutriente, Quantidade, Unidade)
-	Nome_Ingrediente chave estrangeira -> Ingrediente(Nome)
-	Nome_Macronutriente chave estrangeira -> Macronutriente(Nome)
+	Ingrediente_ID chave estrangeira -> Ingrediente(Nome)
+Constitui(_IngrdienteS_ID_, _CQ_ID_, QuantidadeGrama)
+	IngredienteS_ID chave estrangeira -> IngredienteSimples(ID)
+	CQ_ID chave estrangeira -> CompostoQuimico(ID)
+Define(_IngredienteS_ID_, _Macro_ID_, QuantidadeGrama)
+	Ingrediente_ID chave estrangeira -> IngredienteSimples(ID)
+	Macro_ID chave estrangeira -> Macronutriente(ID)
+Compoe(_Ingrediente1_ID_, _Ingrediente2_ID_)
+	Ingrediente1_ID chave estrangeira -> Ingrediente(ID)
+	Ingrediente2_ID chave estrangeira -> Ingrediente(ID)
 ~~~
 * Modelo lógico de grafos
 ~~~
