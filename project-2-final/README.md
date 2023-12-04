@@ -183,6 +183,19 @@ def limpa_receita():
     regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
 ~~~
 
+~~~python
+with open('data/external/04_Recipe-Ingredients_Aliases.csv') as csv_file:
+	csv_reader = csv.reader(csv_file, delimiter=',')
+	array = []
+	for row in csv_reader:
+	    array.append(row[1])
+
+    input_strings = array[1:]
+    result = test_strings(input_strings)
+#...
+regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
+~~~
+
 
 * Integração dos dados de um dataset com o outro usando um algoritmo de Hamming, na qual calcula a pontuação de correspondência para duas strings de dados. [ligador.py](src/limpar.py)
 
