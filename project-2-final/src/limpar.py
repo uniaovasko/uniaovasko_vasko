@@ -124,6 +124,9 @@ def limpa_ingrediente():
         ingredientes_fdb: dict[str, dict[str, str]] = {}
         ingredientes_cdb = { x["id_cdb"]: x for x in ing_reader }
         ingredientes_compostos = { x["entity_id"]: x for x in ingc_orig_reader }
+
+        compostos_out: dict[str, dict[str, str]] = {}
+
         for ing_line in ingredientes_cdb.values():
             if ing_line["id_fdb"] not in ingredientes_fdb.keys():
                 d = densidades.get(ing_line["id_fdb"], {"Density (g/ml)": 1})["Density (g/ml)"]
@@ -152,12 +155,13 @@ def limpa_ingrediente():
                     "id_composto": ingc_line["id_cdb"],
                     "id_base": id_base,
                 }
-                comp_writer.writerow(comp)
+                compostos_out[(comp["id_composto"], comp["id_base"])] = comp
             ing_writer.writerow({
                 "id": ingc_line["id_cdb"],
                 "nome": ingc_line["nome_cdb"],
                 "composto": 1,
             })
+        comp_writer.writerows(compostos_out.values())
             
 
 
