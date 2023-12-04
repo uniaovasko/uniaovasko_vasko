@@ -1,6 +1,6 @@
 #!/bin/bash
 
-conda install -c conda-forge jupyterlab=1.2
+conda install -c conda-forge jupyterlab=4.0
 beakerx install --lab
 beakerx_tabledisplay install --lab
 ###############################################################
