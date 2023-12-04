@@ -59,7 +59,7 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 ## Modelo Conceitual
 
-> <img src="assets\diagrama_conceitual_atualizado.png" width="400px" height="auto">
+> <img src="assets\modelo_conceitual_atualizado.drawio (1).png" width="400px" height="auto">
 
 ## Modelos Lógicos
 
