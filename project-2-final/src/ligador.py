@@ -192,7 +192,7 @@ def ligar_ingrediente_receita():
         out_writer = csv.DictWriter(out_f, fieldnames=[
                                     "id_ingrediente", "id_receita", "volume", "massa", "unidade"], lineterminator='\n')
         removidos_writer = csv.DictWriter(
-            removidos_f, fieldnames=["id_ing_cdb", "id_receita", "nome"])
+            removidos_f, fieldnames=["id_ing_cdb", "id_receita", "nome"], lineterminator='\n')
 
         out_writer.writeheader()
 

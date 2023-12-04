@@ -84,9 +84,66 @@ def limpa_content():
                     composto_writer.writerow(row)
         print(f"nones: {nones}, zeros: {zeros}")
 
+def match_alias(nome, aliases: list[str]):
+    for i in range(len(aliases)):
+        alias = aliases[i]
+        tem_hifen = alias.find("-") > -1
+        tem_igual = alias.find("=") > -1
+        tem_hashtag = alias.find("#") > -1
+        novo_alias = alias
+        if tem_hifen:
+            novo_alias = novo_alias.replace("-", " ")
+        if tem_hashtag:
+            novo_alias = novo_alias.removeprefix("#")
+            novo_alias = novo_alias.removesuffix("#")
+        if tem_igual:
+            aliases.append(novo_alias.replace("=", " "))
+            novo_alias = novo_alias.replace("=", "")
+        if tem_hashtag or tem_igual or tem_hifen:
+            aliases.append(novo_alias)
+    return nome in aliases
 
+def limpa_ingrediente():
+    with (open("data/interim/ingredientes_final.csv") as ing_f,
+          open("data/interim/ingredientes_compostos_final.csv") as ingc_f,
+          open("data/external/03_Compound_Ingredients.csv") as ingc_orig_f,
+          open("data/processed/ingredientes.csv", "w") as out_f,
+          open("data/processed/composicao.csv", "w") as out_comp_f):
+        ing_reader = csv.DictReader(ing_f, lineterminator="\n")
+        ingc_reader = csv.DictReader(ingc_f, lineterminator="\n")
+        ingc_orig_reader = csv.DictReader(ingc_orig_f, lineterminator="\n")
+        ing_writer = csv.DictWriter(out_f, ["id", "nome", "grupo", "subgrupo", "densidade", "peso_medio", "composto"], lineterminator="\n")
+        comp_writer = csv.DictWriter(out_comp_f, ["id_composto", "id_base"], lineterminator="\n")
 
-        
+        ing_writer.writeheader()
+        comp_writer.writeheader()
+
+        ingredientes_fdb: dict[str, dict[str, str]] = {}
+        ingredientes_cdb = { x["id_cdb"]: x for x in ing_reader }
+        ingredientes_compostos = { x["entity_id"]: x for x in ingc_orig_reader }
+        for ing_line in ingredientes_cdb.values():
+            if ing_line["id_fdb"] not in ingredientes_fdb.keys():
+                ing = {
+                    "id": ing_line["id_fdb"],
+                    "nome": ing_line["nome_fdb"],
+                    "grupo": ing_line["grupo"],
+                    "subgrupo": ing_line["subgrupo"],
+                    "densidade": 1, #TODO
+                    "peso_medio": 1, #TODO
+                    "composto": 0,
+                }
+                ingredientes_fdb[ing["id"]] = ing
+                ing_writer.writerow(ing)
+        for ingc_line in ingc_reader:
+            composicao = ingredientes_compostos[ingc_line["id_cdb"]]["Contituent Ingredients"].split(", ")
+            composicao_ids = []
+            for c in composicao:
+                for ing_line in ingredientes_cdb.values():
+                    if match_alias(c, ing_line["aliases"].split("; ")):
+                        composicao_ids.append(ing_line["id_fdb"])
+                        break
+                    
+
 
 
 if __name__ == "__main__":
