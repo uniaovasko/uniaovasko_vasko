@@ -1,0 +1,726 @@
+FooDB_Id,FooDB_Name,Density (g/ml),Unit_Weight (g)
+1,Angelica,0.884,
+3,Silver linden,1.046,
+4,Kiwi,0.57,125
+5,Allium,0.574,50.5
+6,Garden onion,0.403,70.44
+7,Leek,0.38,322
+8,Garlic,0.574,50.5
+10,Lemon verbena,0.89,
+11,Cashew nut,0.545,6.71
+12,Pineapple,0.7,1587.57
+13,Dill,0.888,
+16,Peanut,0.905,0.8
+17,Burdock,0.53,226.796
+18,Horseradish,0.61,
+19,Tarragon,0.32,
+20,Mugwort,0.927,
+21,Asparagus,0.57,16
+22,Oat,0.3815,
+23,Star fruit,0.56,91
+24,Brazil nut,0.504,5
+25,Common beet,1.16,120
+26,Borage,0.9175,
+28,Swede,0.69,900
+31,Cauliflower,0.45,1200
+32,Brussel sprouts,0.37,200
+33,Kohlrabi,0.57,200
+34,Broccoli,0.37,500
+36,Turnip,0.69,150
+37,Pigeon pea,0.855,
+38,Tea,1,
+39,Capers,0.58,
+40,Pepper,0.44,25
+41,Papaya,0.965,680
+42,Safflower,0.921,
+43,Caraway,0.45,
+44,Pecan nut,0.481,1.8
+45,Chestnut,0.56,5
+47,Chickpea,0.69,
+48,Endive,0.21,85
+49,Chicory,0.38,35
+53,Lime,0.912,70
+54,Lemon,0.95,120
+55,Pummelo,0.8,1500
+56,Mandarin orange,0.44,120
+57,Sweet orange,0.44,120
+58,Coffe,1,
+59,Arabica coffee,1,
+61,Coriander,0.302,
+63,Saffron,0.14,
+64,Muskmelon,0.66,1133
+65,Cucumber,0.56,201
+66,Cucurbita,0.66,1133
+67,Cumin,0.57,
+68,Turmeric,0.64,
+69,Quince,1.01,350
+70,Lemon grass,0.28,
+71,Globe artichoke,0.71,350
+73,Japanese persimmon,5.817,175
+74,Cardamom,0.39,
+75,Black crowberry,1.07,
+76,Loquat,0.63,35
+78,Wax apple,0.75,135
+79,Common buckwheat,0.72,
+80,Tartary buckwheat,0.72,
+81,Fig,0.63,40
+82,Fennel,0.39,
+83,Strawberry,0.602,21.5
+84,Black huckleberry,0.612,
+85,Soy bean,0.75,
+86,Sunflower,0.62,
+88,Barley,0.65,
+89,Hyssop,0.941,
+90,Star anise,0.868,
+91,Swamp cabbage,0.3,
+92,Sweet potato,0.56,150
+95,Lettuce,0.24,
+96,Grass pea,0.61,
+97,Sweet bay,1.18,
+98,Lentils,0.81,
+99,Garden cress,0.76,
+100,Lovage,1.036,
+101,Flaxseed,0.71,
+102,Mexican oregano,0.2,
+103,Lichee,0.8,10
+104,Lupine,0.76,
+105,Apple,0.75,85
+106,Mango,0.7,150
+107,German camomile,1.02,
+108,Lemon balm,0.9,
+109,Mentha,0.812,
+111,Cornmint,0.892,
+112,Spearmint,0.11,
+113,Peppermint,0.11,
+114,Medlar,0.773,15
+115,Bitter gourd,0.39,110
+116,Mulberry,0.68,
+117,Black mulberry,0.68,
+118,Nutmeg,0.47,
+119,Sweet basil,0.1,
+120,Evening primrose,0.926,
+121,Olive,0.57,5.5
+122,Sweet marjoram,0.11,
+124,Common oregano,0.2,
+125,Rice,0.77,
+126,Millet,0.75,
+127,Poppy,0.6,
+128,Passion fruit,1,35
+129,Parsnip,0.56,160
+130,Avocado,0.86,215
+131,Parsley,0.26,
+132,Scarlet bean,0.48,
+133,Lima bean,0.48,
+135,Date,0.49,
+137,Anise,0.45,
+138,Pine nut,0.619,0.8
+140,Pistachio,0.52,
+141,Common pea,0.61,
+142,Purslane,0.18,
+144,Apricot,0.66,35
+145,Sweet cherry,0.76,7
+146,Sour cherry,0.76,7
+147,European plum,0.7,66
+148,Almond,0.62,1.1
+149,Peach,0.65,130
+150,Guava,0.82,175
+151,Pomegranate,1.05,255.146
+152,Pear,0.59,178
+153,Radish,0.65,30
+154,Garden rhubarb,0.52,
+156,Redcurrant,0.47,0.605
+157,Gooseberry,0.46,4.5
+158,Watercress,0.14,
+159,Rosemary,0.22,
+161,Cloudberry,1.352,
+162,Red raspberry,0.52,
+163,Black raspberry,0.52,
+164,Sorrel,0.637,
+165,Common sage,0.14,
+167,Summer savory,0.296,
+168,Winter savory,0.296,
+169,Rye,0.71,
+170,Sesame,0.61,
+171,Garden tomato,1.02,123
+172,Cherry tomato,1.02,35
+174,Eggplant,0.35,1360
+175,Potato,1.067,210
+176,Rowanberry,0.66,
+177,Sorghum,0.81,
+178,Spinach,0.13,
+179,Cloves,0.43,
+180,Tamarind,0.93,
+181,Dandelion,0.23,
+182,Cocoa bean,0.59,
+183,Common thyme,0.29,
+184,Linden,0.56,
+185,Small-leaf linden,0.56,
+186,Fenugreek,0.752,
+189,Lowbush blueberry,0.63,0.3
+190,Sparkleberry,0.63,
+192,American cranberry,0.42,1.5
+193,Bilberry,0.63,0.3
+194,Lingonberry,0.63,
+195,Vanilla,0.88,
+196,Common verbena,0.14,
+198,Adzuki bean,0.832,
+199,Gram bean,0.69,
+200,Mung bean,0.44,
+201,Climbing bean,0.44,
+203,Muscadine grape,0.39,9.5
+205,Corn,0.9,250
+206,Ginger,0.41,
+208,Banana,1.19,118
+209,Bayberry,0.63,
+210,Elliott's blueberry,0.63,0.3
+211,Canada blueberry,0.63,0.3
+213,Buffalo currant,0.47,
+215,Celery stalks,0.508,
+218,Deerberry,0.63,
+219,Ginseng,0.455,
+223,Pepper (Capsicum),0.47,135
+224,Longan,0.519,12.5
+233,Pepper (Capsicum),0.47,135
+234,Rambutan,0.36,40
+235,Red rice,0.77,
+237,Swiss chard,0.74,
+241,Welsh onion,0.403,135.3
+242,Hard wheat,0.81,
+243,Shallot,0.68,36.85
+244,Rocket salad,0.08,
+245,Carrot,0.46,61
+246,Triticale,0.81,
+251,Komatsuna,0.3,
+252,Pak choy,0.3,
+256,Grapefruit,0.84,265
+257,Jostaberry,0.63,0.3
+258,Kai-lan,0.37,
+266,Pineappple sage,0.14,
+267,Skunk currant,0.47,
+268,Beer,1.017,
+270,Breakfast cereal,0.24,
+274,Pasta,0.52,
+275,Biscuit,0.5,3.4
+276,Sourdough,0.245,
+277,Spirit,0.94,
+280,Abalone,1.067,300
+281,Abiyuch,0.96,114
+282,Acerola,0.41,10
+283,Acorn,0.512,4.525
+284,Winter squash,0.87,1020
+285,Agar,0.81,
+286,Red king crab,0.96,2900
+287,Alfalfa,0.26,
+288,Allspice,0.41,
+289,Amaranth,0.82,
+290,Arrowhead,0.59,
+291,Arrowroot,0.54,
+293,Atlantic herring,0.59,680
+294,Atlantic mackerel,0.59,1900
+295,Painted comber,1.06,8200
+296,Atlantic pollock,1.06,4300
+297,Atlantic wolffish,1.06,9000
+298,Bamboo shoots,0.64,
+299,Striped bass,1.06,9070
+301,Beech nut,0.545,2
+302,Beluga whale,1.06,250
+303,Bison,1.036,250
+305,Alaska blackfish,1.06,200
+307,Blue mussel,0.63,32.5
+308,Northern bluefin tuna,0.98,235000
+309,Bluefish,1.06,7900
+310,Wild boar,0.872,250
+311,Bowhead whale,1.06,250
+312,Breadfruit,0.93,3150
+314,Rapini,0.168,
+316,Buffalo,,250
+317,Burbot,1.06,6500
+318,Giant butterbur,0.396,
+319,American butterfish,1.06,566
+320,Butternut,0.87,1250
+321,Butternut squash,0.87,
+322,Calabash,0.49,3000
+323,Cardoon,0.75,
+325,Natal plum,0.63,100
+326,Carob,0.732,
+327,Common carp,1.04,8000
+328,Cassava,0.872,1500
+329,Channel catfish,1.04,1360
+330,Chayote,0.56,203
+331,Cherimoya,0.68,325
+332,Chervil,0.13,
+333,Chia,0.88,
+334,Chicken,0.8,3650
+336,Chinese chestnut,0.668,20
+337,Chinese water chestnut,0.668,20
+338,Garland chrysanthemum,0.104,
+339,Cisco,1.06,1800
+340,Nuttall cockle,1.06,
+341,Coconut,0.35,1400
+344,Common octopus,0.224,6500
+345,Corn salad,0.3,
+346,Cottonseed,0.32,
+347,Catjang pea,0.3,
+349,Squashberry,0.63,
+350,Atlantic croaker,1.036,567
+351,Cusk,1.06,3400
+352,Cuttlefish,1.06,6750
+353,Mule deer,1.1,250
+354,Devilfish,1.06,6000
+355,Dock,0.564,
+356,Dolphin fish,1.06,14000
+357,Freshwater drum,1.06,2725
+358,Mallard duck,1.28,2041
+360,Durian,1.03,2000
+362,Freshwater eel,1.036,907
+363,Elderberry,0.612,
+364,Elk,1.1,250
+365,Emu,,34500
+366,Oregon yampah,0.23,
+367,European anchovy,1.06,20
+368,European chestnut,0.56,5
+369,Turbot,1.06,14000
+370,Fireweed,0.1,
+371,Florida pompano,1.06,1400
+372,Ginkgo nuts,0.656,
+373,Greylag goose,0.87,3300
+374,Grape,0.39,9.5
+375,Greenland halibut/turbot,1.06,14000
+376,Groundcherry,0.59,
+377,Grouper,1.06,250
+378,Guinea hen,0.8,1150
+379,Haddock,1.036,2040
+380,Hippoglossus (Common halibut),1.04,13600
+381,Hazelnut,0.47,3.025
+383,Horse,1.036,250
+386,Hyacinth bean,0.82,
+387,Irish moss,0.34,
+388,Pacific jack mackerel,0.59,550
+389,Jackfruit,0.64,6750
+390,Japanese chestnut,0.56,5
+392,Jerusalem artichoke,0.63,255
+393,Jujube,0.49,15
+394,Jute,0.37,
+395,Kale,0.09,
+396,Kelp,0.34,
+397,King mackerel,1.06,5670
+398,Kumquat,1.016,20
+399,Lambsquarters,0.76,
+400,Leather chiton,1.06,
+402,Common ling,1.06,1550
+403,Lingcod,1.06,24950
+404,American lobster,0.61,4530
+405,Loganberry,0.62,
+406,Lotus,0.51,
+408,White lupine,0.7,
+409,Malabar spinach,0.19,
+410,Mammee apple,0.965,1250
+411,Purple mangosteen,0.912,150
+412,Alpine sweetvetch,0.23,
+413,Milkfish,1.06,375
+414,Monkfish,1.06,9000
+416,Moth bean,1.3,
+417,Mountain yam,0.63,3750
+418,Striped mullet,1.04,4400
+422,New Zealand spinach,0.24,
+423,Nopal,0.364,
+424,Ocean pout,1.06,3000
+425,North Pacific giant octopus,0.224,40500
+426,Ohelo berry,0.63,
+427,Okra,0.42,10
+430,Ostrich,0.572,250
+431,Spotted seal,,250
+432,Pacific herring,0.59,272
+434,Pacific rockfish,1.06,770
+437,Common persimmon,1.02,168
+438,Pheasant,0.59,1200
+439,Northern pike,1.03,1587
+440,Pili nut,0.508,
+441,Colorado pinyon,0.508,200
+442,Pitanga,0.73,3.9
+444,French plantain,1.09,180
+445,American pokeweed,0.39,9.5
+448,Prairie turnip,0.69,
+449,Prickly pear,0.628,125
+450,Quinoa,0.72,
+451,European rabbit,,1750
+453,Rainbow smelt,1.06,99
+454,Rainbow trout,1.036,1500
+455,Malabar plum,0.7,130
+456,Rose hip,0.536,2.25
+457,Roselle,0.24,
+458,Orange roughy,1.06,1150
+459,Sablefish,1.06,4000
+460,Pink salmon,0.57,1.927768
+461,Chum salmon,0.57,4.76272
+462,Coho salmon,0.57,4.53592
+463,Sockeye salmon,0.57,4.30913
+464,Chinook salmon,0.57,13.6078
+465,Atlantic salmon,0.57,4.53592
+466,Salmonberry,0.63,
+467,Common salsify,0.57,
+468,Sapodilla,1.02,150
+470,Spanish mackerel,1.06,8500
+471,Pacific sardine,1.06,300
+472,Scallop,0.52,13
+473,Scup,0.7,680
+474,Sea cucumber,1.06,1450
+475,Steller sea lion,1.036,250
+476,Bearded seal,1.06,250
+477,Ringed seal,,250
+478,Sea trout,1.06,1150
+479,Sesbania flower,0.08,
+480,American shad,1.06,3000
+481,Shark,1.06,250
+482,Sheefish,1.06,22000
+483,"Sheep (Mutton, Lamb)",1.49,250
+484,Sheepshead,1.06,1600
+485,Hedge mustard,0.43,
+487,Snapper,1.06,6000
+488,Soursop,0.952,5500
+489,Spelt,0.74,
+490,Spirulina,0.47,
+491,Squab,0.592,396
+494,Greater sturgeon,0.576,40823
+495,White sucker,1.06,5216
+497,Pumpkinseed sunfish,1.06,283
+498,Swordfish,0.99,56699
+499,Taro,0.44,500
+500,Teff,0.82,
+501,Tilefish,1.06,7937
+502,Mexican groundcherry,0.59,
+503,Towel gourd,0.4,
+504,"Salmonidae (Salmon, Trout)",0.57,4.76272
+505,Turkey,0.59,18597
+506,"Cattle (Beef, Veal)",0.956,250
+507,Walleye,1.06,1360
+508,Alaska pollock,1.06,793
+509,Wasabi,1.352,
+510,Wax gourd,0.74,850
+511,Whelk,0.63,75
+513,Broad whitefish,1.06,8800
+514,Whitefish,0.576,10000
+515,Whiting,1.04,1700
+516,Wild rice,0.77,
+517,Tea leaf willow,0.23,
+518,Winged bean,0.728,
+519,Yam,0.63,3750
+520,Jicama,0.55,659
+521,Yautia,0.57,
+522,Yellowfin tuna,0.98,36287
+523,Yellowtail amberjack,1.06,27215
+524,Pollock,1.06,907
+525,Albacore tuna,0.98,33000
+526,Gadus (Common cod),1.18,40000
+527,Atlantic halibut,1.04,13607
+530,Smelt,1.06,99
+531,"Clupeinae (Herring, Sardine, Sprat)",1.06,226
+532,Spiny lobster,1.06,907
+534,Black-eyed pea,1.1,
+535,Deer,1.1,250
+536,Macadamia nut,0.57,
+537,Percoidei (Bass and others),1.06,
+538,Perciformes,1.06,
+540,Rabbit,0.93,2721
+542,Beefalo,1.036,250
+544,"Bivalvia (Clam, Mussel, Oyster)",,51.5
+545,Squid,0.59,150
+546,Shrimp,0.16,19
+547,Crayfish,0.59,3500
+548,Flatfish,1.06,
+549,Domestic pig,0.57,250
+550,Walrus,1.06,250
+551,Alaska wild rhubarb,1.01,
+552,Oriental wheat,0.77,
+553,Yardlong bean,0.384,
+555,Quail,1.036,105
+556,Boysenberry,0.556,
+558,Feijoa,1.03,100
+559,Rowal,0.96,
+560,Jew's ear,0.42,
+562,Shiitake,0.408,
+563,Purple laver,0.064,
+564,Wakame,0.34,
+565,Enokitake,0.408,
+566,Epazote,0.05,
+567,Oyster mushroom,0.36,
+568,Cloud ear fungus,0.12,
+569,Maitake,0.3,
+570,Ostrich fern,0.6,
+571,Spot croaker,1.036,793
+572,Sourdock,0.23,
+573,Tinda,0.492,55
+574,Atlantic menhaden,1.06,376
+575,Wheat,0.79,
+577,Agave,1.49,
+578,Narrowleaf cattail,0.23,
+579,Jellyfish,1,210
+580,Anchovy,1.06,20
+581,Blue whiting,1.06,500
+582,Carp bream,1.06,3000
+583,Chanterelle,0.23,
+584,Sturgeon,0.576,45359
+585,Charr,1.06,1360
+586,Cinnamon,0.53,
+587,Crab,0.96,136
+588,Common dab,1.06,1474
+589,Spiny dogfish,1.06,3628
+590,Anatidae,1.28,275
+591,Anguilliformes,1.06,12000
+592,True frog,1.06,51
+593,Garfish,1.06,200
+594,Gadiformes,1.06,8500
+595,Mountain hare,,3100
+596,Lake trout,1.036,1814
+597,Lemon sole,1.6,1600
+598,Clawed lobster,0.61,907
+599,Lumpsucker,1.06,5000
+600,"Scombridae (Bonito, Mackerel, Tuna)",0.98,
+602,Norway haddock,1.036,1350
+604,Norway pout,1.06,600
+605,Oil palm,0.91,
+606,True oyster,1.06,51.5
+607,Sago palm,0.556,
+608,Persimmon,1.02,168
+609,Pikeperch,1.06,4000
+610,"Pleuronectidae (Dab, Halibut, Plaice)",1.06,1474
+611,Rock ptarmigan,,540
+612,Pacific ocean perch,1.036,1814
+613,Black salsify,0.57,
+614,True seal,,250
+615,Red algae,0.34,
+616,Kombu,0.12,
+617,Snail,0.5,3
+618,True sole,1.6,1600
+619,Catfish,1.04,1360
+620,Thistle,0.76,
+622,Walnut,0.43,15
+624,"Columbidae (Dove, Pigeon)",0.592,310
+625,Conch,0.536,907
+627,Berry Wine,0.995,
+630,Liquor,0.94,
+631,Cheese,1.0755,
+632,Milk (Cow),1.035,
+633,Eggs,1.03,60
+634,Yogurt,1.05,
+638,Bean,0.48,
+639,Vodka,0.95,
+640,Whisky,0.94,
+641,Ice cream,0.54,
+642,Gin,0.94,
+643,Honey,1.4,
+644,Liquorice,1.3,
+645,Vinegar,0.96,
+646,Rum,0.94,
+647,Port wine,0.99,
+648,Vermouth,1.004,
+649,Sherry,0.997,
+650,Madeira wine,0.99,
+651,Nougat,0.59,
+653,Toffee,0.576,
+654,Cake,0.9,4535
+655,Pizza,0.47,900
+656,Ymer,1.035,
+660,Pastry,0.245,
+662,Chewing gum,1.25,
+663,Marzipan,0.96,
+664,Salad dressing,0.99,
+666,Salt,1.2,
+667,Butter,1.04,
+669,Cream,1.012,
+670,Sugar,0.7,
+671,Sausage,0.78,67
+672,Meatball,0.61,28
+673,Mustard,1.05,
+674,Pate,0.88,
+677,Meat bouillon,1.01,
+679,Whey,1.0025,
+680,Casein,1.0632,
+681,Swiss cheese,1.0755,
+682,Leavening agent,0.93,
+683,Marshmallow,0.21,5.5
+684,Gelatin,1.14,
+685,Water,1,
+687,Milk (Human),1.035,
+691,Dumpling,0.245,
+692,Soup,1,
+695,Syrup,1.48,
+697,Remoulade,1.01,
+698,Chocolate spread,1.25,
+699,Fruit gum,0.51,
+700,Curry powder,0.43,
+702,Meringue,0.81,
+703,Lard,0.87,
+704,Other animal fat,0.9196,
+706,Cocoa butter,0.9,
+707,Cocoa powder,1.365,
+709,Chocolate,1.325,
+710,Hot chocolate,1.06,
+711,Dried milk,0.715,
+712,Milk (Other mammals),1.035,
+713,Kefir,1.035,
+714,Buttermilk,1.04,
+716,Soy sauce,1.08,
+717,Miso,1.16,
+718,Tofu,1.1,
+721,Zwieback,0.245,800
+722,Roe,0.95,
+723,Cichlidae (Tilapia),1.04,433
+724,Icing,1.22,
+725,Snack bar,0.8,43.94
+726,Green turtle,1.06,250
+728,Burrito,0.74,596
+729,Hamburger,1.032,85
+732,Taco,0.464,91
+733,Tortilla,0.245,
+734,Nachos,0.56,
+736,Salad,0.3,
+738,Dulce de leche,1.28,
+739,Topping,0.252,
+740,Sweet custard,1.012,
+742,Egg roll,0.528,89
+743,Heart of palm,1.09,
+744,Popcorn,0.05,
+745,Potato chip,0.14,
+746,Tortilla chip,0.11,
+747,Corn chip,0.17,
+748,Hibiscus tea,1,
+749,Stew,1,
+750,Gelatin dessert,1.14,
+751,Junket,0.29,
+752,Falafel,0.59,
+753,Frybread,0.245,
+755,Lasagna,0.96,
+756,Morchella (Morel),0.28,
+757,Pancake,0.245,117
+758,Pectin,0.96,
+759,Pudding,0.952,
+760,Waffle,0.245,62
+761,Soy milk,1.03,
+762,Meatloaf,0.54,
+763,Sake,0.98,
+764,Cocktail,0.98,
+765,Couscous,0.73,
+766,Bulgur,0.59,
+768,Coffee mocha,1,
+769,Chimichanga,0.616,183
+770,Semolina,0.704,
+771,Tapioca pearl,0.64,
+772,Tostada,0.516,
+773,Quesadilla,0.4,180
+774,Baked potato,1.067,210
+775,Hot dog,0.64,45
+776,Spread,1,
+777,Enchilada,0.52,
+781,Ketchup,1.15,
+783,Adobo,1.148,
+786,Horned melon,0.98,283
+787,Hushpuppy,0.644,
+788,Fruit juice,1,
+789,Relish,1.04,
+791,Fruit salad,0.74,
+792,Soy yogurt,1.11,
+795,Cold cut,0.96,
+796,Mixed nuts,0.556,
+798,Babassu palm,0.92,
+800,Shea tree,0.91,
+801,Oil-seed Camellia,0.75,
+802,Ucuhuba,0.92,168
+803,Phyllo dough,0.245,
+804,Cooking oil,0.92,
+805,Pie crust,0.245,
+807,Pie,1,175
+808,Shortening,0.87,
+809,Soy cream,1.03,
+810,Ice cream cone,0.54,110
+811,Molasses,1.41,
+813,Nance,0.472,
+814,Naranjilla,0.51,168
+815,Natto,0.74,
+816,Ravioli,1,
+817,Scrapple,1.04,
+819,Succotash,0.81,
+820,Tamale,0.245,
+822,Rice cake,0.26,
+823,Tree fern,0.6,
+824,Evaporated milk,1.07,
+825,Flour,0.791,
+826,Akutaq,0.54,
+829,Pita bread,0.245,800
+830,Focaccia,0.245,800
+831,Bagel,0.245,800
+834,Piki bread,0.245,800
+835,French toast,0.245,800
+836,Wheat bread,0.245,800
+837,Rye Bread,0.245,800
+838,Oat bread,0.245,800
+839,Potato bread,0.245,800
+840,Cornbread,0.245,800
+841,Corn grits,0.67,
+842,Multigrain bread,0.245,800
+843,Rice bread,0.245,800
+844,Pan dulce,0.245,800
+845,Raisin bread,0.245,800
+846,Wonton wrapper,0.284,
+848,Trail mix,0.63,
+849,Greenthread tea,0.23,
+851,Vegetable juice,1.02,
+852,Horchata,1.25,
+853,Soft drink,1,
+855,Milkshake,0.96,
+856,Chocolate mousse,0.72,
+858,Pupusa,0.245,
+859,Empanada,0.4,100
+860,Arepa,0.5,100
+861,Ascidians,,
+862,Gefilte fish,0.96,
+863,Yellow pond-lily,0.23,
+864,Fish burger,1.06,
+866,Pot pie,0.5,
+867,Stuffing,0.85,
+869,Fudge,1.28,
+870,Candy bar,0.8,43.94
+871,Condensed milk,1.32,
+872,Margarine,0.96,
+874,Hummus,1.04,
+876,Potato puffs,0.53,
+877,Potato gratin,1.016,
+881,Cabbage,0.3,
+882,Chinese bayberry,0.602,21.5
+883,Mushrooms,0.296,25
+907,Green zucchini,0.94,196
+915,Green bean,0.48,
+916,Saskatoon berry,0.76,3.7
+917,Nanking cherry,0.76,3.7
+918,Japanese pumpkin,0.49,1250
+938,Blackberry,0.66,7
+939,Black tea,1,
+940,Green tea,1,
+943,Red wine,0.995,
+946,Soybean oil,0.917,
+948,Mate,0.41,
+949,White Wine,0.995,
+950,Sour orange,0.44,120
+952,Rosé wine,0.995,
+954,Canola oil,0.92,
+958,White champagne,0.998,
+965,Mozzarella cheese,1.0755,
+966,Plain cream cheese,1.01,
+967,Cheddar Cheese,1.0755,
+968,Parmesan cheese,1.0755,
+970,Coconut milk,1.02,
+973,Coconut oil,0.9145,
+974,Peanut oil,0.916,
+976,Corn oil,0.9185,
+982,Cottage cheese,1.0755,
+983,Blue cheese,1.0755,
+984,Clam,0.96,
+987,Jalapeno pepper,0.38,20
+988,Greek feta cheese,1.0755,
+994,Red onion,0.403,70.44
+995,Green onion,0.403,70.44
+1000,Black raisin,0.61,
+1001,Cannellini bean,1.1,
+1016,Cantaloupe melon,0.66,1133
+1019,White Bread,0.245,
+1022,Fish oil,0.93,

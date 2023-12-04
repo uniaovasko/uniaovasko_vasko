@@ -6,9 +6,6 @@ from volume import test_string
 def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Aliased Ingredient Name', cdb_id='Entity ID') -> bool:
     if (s := hamming.normalized_similarity(ing_cdb[cdb_nome].lower(), ing_fdb["name"].lower())) >= 0.85:
         sem_par.pop(ing_cdb[cdb_id], None)
-        if ing_cdb[cdb_id] in pares.keys():
-            print(
-                f"{ing_cdb[cdb_id], ing_cdb[cdb_nome]} de {pares[ing_cdb[cdb_id]]} para {(ing_cdb[cdb_id], ing_fdb['name'])}")
         pares[ing_cdb[cdb_id]] = (ing_cdb[cdb_nome], ing_fdb['id'],
                                   ing_fdb["name"], ing_fdb["food_group"], ing_fdb["food_subgroup"])
         return True
@@ -65,8 +62,6 @@ def ligar_ingredientes():
                         if checar_par(ing_cdb, ing_fdb, sem_par, pares):
                             break
 
-        print("Quantidade sem par:", len(sem_par))
-        # print(pares)
         with open("data/interim/ingredientes.csv", "w") as out:
             csv_writer = csv.writer(out, lineterminator='\n')
             csv_writer.writerow(
@@ -109,8 +104,7 @@ def ligar_ingredientes_compostos():
                     for x in alt_list:
                         if checar_par(ing_cdb, ing_fdb, sem_par, pares, "Compound Ingredient Name", "entity_id"):
                             break
-        print("Quantidade sem par:", len(sem_par))
-        print(pares)
+
         with open("data/interim/ingredientes_compostos.csv", "w") as out:
             csv_writer = csv.writer(out, lineterminator='\n')
             csv_writer.writerow(

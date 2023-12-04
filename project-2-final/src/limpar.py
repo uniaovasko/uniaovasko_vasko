@@ -107,29 +107,34 @@ def limpa_ingrediente():
     with (open("data/interim/ingredientes_final.csv") as ing_f,
           open("data/interim/ingredientes_compostos_final.csv") as ingc_f,
           open("data/external/03_Compound_Ingredients.csv") as ingc_orig_f,
+          open("data/external/densidades.csv") as dens_f,
           open("data/processed/ingredientes.csv", "w") as out_f,
           open("data/processed/composicao.csv", "w") as out_comp_f):
         ing_reader = csv.DictReader(ing_f, lineterminator="\n")
         ingc_reader = csv.DictReader(ingc_f, lineterminator="\n")
         ingc_orig_reader = csv.DictReader(ingc_orig_f, lineterminator="\n")
+        dens_reader = csv.DictReader(dens_f, lineterminator="\n")
         ing_writer = csv.DictWriter(out_f, ["id", "nome", "grupo", "subgrupo", "densidade", "peso_medio", "composto"], lineterminator="\n")
         comp_writer = csv.DictWriter(out_comp_f, ["id_composto", "id_base"], lineterminator="\n")
 
         ing_writer.writeheader()
         comp_writer.writeheader()
 
+        densidades = { x["FooDB_Id"]: x for x in dens_reader }
         ingredientes_fdb: dict[str, dict[str, str]] = {}
         ingredientes_cdb = { x["id_cdb"]: x for x in ing_reader }
         ingredientes_compostos = { x["entity_id"]: x for x in ingc_orig_reader }
         for ing_line in ingredientes_cdb.values():
             if ing_line["id_fdb"] not in ingredientes_fdb.keys():
+                d = densidades.get(ing_line["id_fdb"], {"Density (g/ml)": 1})["Density (g/ml)"]
+                p = densidades.get(ing_line["id_fdb"], {"Unit_Weight (g)": 50})["Unit_Weight (g)"]
                 ing = {
                     "id": ing_line["id_fdb"],
                     "nome": ing_line["nome_fdb"],
                     "grupo": ing_line["grupo"],
                     "subgrupo": ing_line["subgrupo"],
-                    "densidade": 1, #TODO
-                    "peso_medio": 1, #TODO
+                    "densidade": float(d) if d != "" else 1,
+                    "peso_medio": float(p) if p != "" else 1,
                     "composto": 0,
                 }
                 ingredientes_fdb[ing["id"]] = ing
@@ -142,7 +147,18 @@ def limpa_ingrediente():
                     if match_alias(c, ing_line["aliases"].split("; ")):
                         composicao_ids.append(ing_line["id_fdb"])
                         break
-                    
+            for id_base in composicao_ids:
+                comp = {
+                    "id_composto": ingc_line["id_cdb"],
+                    "id_base": id_base,
+                }
+                comp_writer.writerow(comp)
+            ing_writer.writerow({
+                "id": ingc_line["id_cdb"],
+                "nome": ingc_line["nome_cdb"],
+                "composto": 1,
+            })
+            
 
 
 
@@ -150,4 +166,5 @@ if __name__ == "__main__":
     # limpa_nutrient()
     # limpa_compound()
     # limpa_receita()
-    limpa_content()
+    # limpa_content()
+    limpa_ingrediente()

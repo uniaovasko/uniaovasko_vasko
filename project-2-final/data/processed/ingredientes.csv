@@ -1,0 +1,780 @@
+id,nome,grupo,subgrupo,densidade,peso_medio,composto
+837,Rye bread,Cereals and cereal products,Leavened breads,0.245,800.0,0
+1019,White bread,Cereals and cereal products,Cereals,0.245,1,0
+268,Beer,Beverages,Fermented beverages,1.017,1,0
+642,Gin,Beverages,Distilled beverages,0.94,1,0
+646,Rum,Beverages,Distilled beverages,0.94,1,0
+640,Whisky,Beverages,Distilled beverages,0.94,1,0
+647,Port wine,Beverages,Fortified wines,0.99,1,0
+943,Red wine,Beverages,Fermented beverages,0.995,1,0
+952,Rosé wine,Beverages,Fermented beverages,0.995,1,0
+763,Sake,Beverages,Fermented beverages,0.98,1,0
+649,Sherry,Beverages,Fortified wines,0.997,1,0
+949,White wine,Beverages,Fermented beverages,0.995,1,0
+58,Coffee,Coffee and coffee products,Coffee,1.0,1,0
+948,Mate,Herbs and Spices,Herbs,0.41,1,0
+939,Black tea,Teas,Teas,1.0,1,0
+940,Green tea,Teas,Teas,1.0,1,0
+88,Barley,Cereals and cereal products,Cereals,0.65,1,0
+125,Rice,Cereals and cereal products,Cereals,0.77,1,0
+205,Corn,Cereals and cereal products,Cereals,0.9,250.0,0
+976,Corn oil,Herbs and Spices,Oilseed crops,0.9185,1,0
+744,Popcorn,Snack foods,Snack foods,0.05,1,0
+667,Butter,Milk and milk products,Other milk products,1.04,1,0
+714,Buttermilk,Milk and milk products,Fermented milks,1.04,1,0
+631,Cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+983,Blue cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+967,Cheddar Cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+982,Cottage cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+965,Mozzarella cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+968,Parmesan cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+981,Swiss cheese,Milk and milk products,Fermented milk products,1.0,50.0,0
+634,Yogurt,Milk and milk products,Fermented milk products,1.05,1,0
+70,Lemon grass,Herbs and Spices,Herbs,0.28,1,0
+100,Lovage,Herbs and Spices,Herbs,1.036,1,0
+984,Clam,Aquatic foods,Bivalvia,0.96,1,0
+587,Crab,Aquatic foods,Crustaceans,0.96,136.0,0
+547,Crayfish,Aquatic foods,Crustaceans,0.59,3500.0,0
+396,Kelp,Aquatic foods,Seaweed,0.34,1,0
+472,Scallop,Aquatic foods,Mollusks,0.52,13.0,0
+546,Shrimp,Aquatic foods,Crustaceans,0.16,19.0,0
+545,Squid,Aquatic foods,Mollusks,0.59,150.0,0
+1022,Fish oil,,,0.93,1,0
+105,Apple,Fruits,Pomes,0.75,85.0,0
+144,Apricot,Fruits,Drupes,0.66,35.0,0
+130,Avocado,Vegetables,Fruit vegetables,0.86,215.0,0
+208,Banana,Fruits,Tropical fruits,1.19,118.0,0
+331,Cherimoya,Fruits,Tropical fruits,0.68,325.0,0
+341,Coconut,Fruits,Tropical fruits,0.35,1400.0,0
+360,Durian,Fruits,Tropical fruits,1.03,2000.0,0
+363,Elderberry,Fruits,Berries,0.612,1,0
+558,Feijoa,Fruits,Tropical fruits,1.03,100.0,0
+81,Fig,Fruits,Other fruits,0.63,40.0,0
+374,Grape,Fruits,Berries,0.39,9.5,0
+150,Guava,Fruits,Tropical fruits,0.82,175.0,0
+389,Jackfruit,Fruits,Tropical fruits,0.64,6750.0,0
+76,Loquat,Fruits,Tropical fruits,0.63,35.0,0
+106,Mango,Fruits,Tropical fruits,0.7,150.0,0
+814,Naranjilla,Fruits,Tropical fruits,0.51,168.0,0
+41,Papaya,Fruits,Tropical fruits,0.965,680.0,0
+149,Peach,Fruits,Drupes,0.65,130.0,0
+152,Pear,Fruits,Pomes,0.59,178.0,0
+449,Prickly pear,Fruits,Tropical fruits,0.628,125.0,0
+12,Pineapple,Fruits,Tropical fruits,0.7,1587.57,0
+69,Quince,Fruits,Pomes,1.01,350.0,0
+468,Sapodilla,Fruits,Tropical fruits,1.02,150.0,0
+488,Soursop,Fruits,Tropical fruits,0.952,5500.0,0
+180,Tamarind,Fruits,Tropical fruits,0.93,1,0
+193,Bilberry,Fruits,Berries,0.63,0.3,0
+938,Blackberry,Fruits,Berries,0.66,7.0,0
+146,Sour cherry,Fruits,Drupes,0.76,7.0,0
+145,Sweet cherry,Fruits,Drupes,0.76,7.0,0
+161,Cloudberry,Fruits,Berries,1.352,1,0
+157,Gooseberry,Fruits,Berries,0.46,4.5,0
+194,Lingonberry,Fruits,Berries,0.63,1,0
+405,Loganberry,Fruits,Berries,0.62,1,0
+83,Strawberry,Fruits,Berries,0.602,21.5,0
+256,Grapefruit,Fruits,Citrus,0.84,265.0,0
+398,Kumquat,Fruits,Tropical fruits,1.016,20.0,0
+54,Lemon,Fruits,Citrus,0.95,120.0,0
+53,Lime,Fruits,Citrus,0.912,70.0,0
+195,Vanilla,Herbs and Spices,Spices,0.88,1,0
+883,Mushrooms,Vegetables,Mushrooms,0.296,25.0,0
+1,Angelica,Herbs and Spices,Herbs,0.884,1,0
+332,Chervil,Herbs and Spices,Spices,0.13,1,0
+61,Coriander,Herbs and Spices,Herbs,0.302,1,0
+111,Cornmint,Herbs and Spices,Herbs,0.892,1,0
+13,Dill,Herbs and Spices,Herbs,0.888,1,0
+82,Fennel,Herbs and Spices,Herbs,0.39,1,0
+186,Fenugreek,Herbs and Spices,Herbs,0.752,1,0
+8,Garlic,Herbs and Spices,Herbs,0.574,50.5,0
+108,Lemon balm,Herbs and Spices,Herbs,0.9,1,0
+159,Rosemary,Herbs and Spices,Herbs,0.22,1,0
+112,Spearmint,Herbs and Spices,Herbs,0.11,1,0
+19,Tarragon,Herbs and Spices,Herbs,0.32,1,0
+334,Chicken,Animal foods,Poultry,0.8,3650.0,0
+505,Turkey,Animal foods,Poultry,0.59,18597.0,0
+148,Almond,Nuts,Nuts,0.62,1.1,0
+24,Brazil nut,Nuts,Nuts,0.504,5.0,0
+133,Lima bean,Pulses,Beans,0.48,1,0
+16,Peanut,Nuts,Nuts,0.905,0.8,0
+946,Soybean oil,Herbs and Spices,Oilseed crops,0.917,1,0
+381,Hazelnut,Nuts,Nuts,0.47,3.025,0
+536,Macadamia nut,Nuts,Nuts,0.57,1,0
+622,Walnut,Nuts,Nuts,0.43,15.0,0
+170,Sesame,Herbs and Spices,Oilseed crops,0.61,1,0
+5,Allium,Vegetables,Onion-family vegetables,0.574,50.5,0
+49,Chicory,Vegetables,Root vegetables,0.38,35.0,0
+121,Olive,Vegetables,Fruit vegetables,0.57,5.5,0
+38,Tea,Teas,Teas,1.0,1,0
+158,Watercress,Herbs and Spices,Herbs,0.14,1,0
+643,Honey,Confectioneries,Other confectioneries,1.4,1,0
+974,Peanut oil,Herbs and Spices,Oilseed crops,0.916,1,0
+169,Rye,Cereals and cereal products,Cereals,0.71,1,0
+645,Vinegar,Baking goods,Seasonings,0.96,1,0
+137,Anise,Herbs and Spices,Herbs,0.45,1,0
+90,Star anise,Herbs and Spices,Spices,0.868,1,0
+43,Caraway,Herbs and Spices,Spices,0.45,1,0
+74,Cardamom,Herbs and Spices,Spices,0.39,1,0
+586,Cinnamon,Herbs and Spices,Spices,0.53,1,0
+67,Cumin,Herbs and Spices,Spices,0.57,1,0
+206,Ginger,Herbs and Spices,Spices,0.41,1,0
+118,Nutmeg,Herbs and Spices,Spices,0.47,1,0
+131,Parsley,Herbs and Spices,Herbs,0.26,1,0
+40,Pepper,Vegetables,Fruit vegetables,0.44,25.0,0
+63,Saffron,Herbs and Spices,Spices,0.14,1,0
+68,Turmeric,Herbs and Spices,Spices,0.64,1,0
+915,Green bean,Pulses,Beans,0.48,1,0
+48,Endive,Vegetables,Leaf vegetables,0.21,85.0,0
+7,Leek,Vegetables,Onion-family vegetables,0.38,322.0,0
+95,Lettuce,Vegetables,Leaf vegetables,0.24,1,0
+427,Okra,Vegetables,Other vegetables,0.42,10.0,0
+243,Shallot,Vegetables,Onion-family vegetables,0.68,36.85,0
+113,Peppermint,Herbs and Spices,Herbs,0.11,1,0
+34,Broccoli,Vegetables,Cabbages,0.37,500.0,0
+881,Cabbage,Vegetables,Cabbages,0.3,1,0
+31,Cauliflower,Vegetables,Cabbages,0.45,1200.0,0
+18,Horseradish,Herbs and Spices,Spices,0.61,1,0
+673,Mustard,Baking goods,Condiments,1.05,1,0
+153,Radish,Vegetables,Root vegetables,0.65,30.0,0
+36,Turnip,Herbs and Spices,Herbs,0.69,150.0,0
+33,Kohlrabi,Vegetables,Root vegetables,0.57,200.0,0
+509,Wasabi,Herbs and Spices,Spices,1.352,1,0
+330,Chayote,Gourds,Gourds,0.56,203.0,0
+65,Cucumber,Gourds,Gourds,0.56,201.0,0
+245,Carrot,Vegetables,Root vegetables,0.46,61.0,0
+129,Parsnip,Vegetables,Root vegetables,0.56,160.0,0
+92,Sweet potato,Vegetables,Tubers,0.56,150.0,0
+21,Asparagus,Vegetables,Shoot vegetables,0.57,16.0,0
+328,Cassava,Vegetables,Tubers,0.872,1500.0,0
+175,Potato,Vegetables,Tubers,1.067,210.0,0
+288,Allspice,Herbs and Spices,Spices,0.41,1,0
+954,Canola oil,Herbs and Spices,Oilseed crops,0.92,1,0
+174,Eggplant,Vegetables,Fruit vegetables,0.35,1360.0,0
+101,Flaxseed,Herbs and Spices,Oilseed crops,0.71,1,0
+406,Lotus,Herbs and Spices,Other seeds,0.51,1,0
+151,Pomegranate,Fruits,Tropical fruits,1.05,255.146,0
+178,Spinach,Vegetables,Leaf vegetables,0.13,1,0
+37,Pigeon pea,Pulses,Peas,0.855,1,0
+3,Silver linden,Herbs and Spices,Herbs,1.046,1,0
+10,Lemon verbena,Herbs and Spices,Herbs,0.89,1,0
+11,Cashew nut,Nuts,Nuts,0.545,6.71,0
+17,Burdock,Vegetables,Root vegetables,0.53,226.796,0
+26,Borage,Herbs and Spices,Oilseed crops,0.9175,1,0
+39,Capers,Herbs and Spices,Spices,0.58,1,0
+42,Safflower,Herbs and Spices,Oilseed crops,0.921,1,0
+45,Chestnut,Nuts,Nuts,0.56,5.0,0
+47,Chickpea,Pulses,Peas,0.69,1,0
+55,Pummelo,Fruits,Citrus,0.8,1500.0,0
+59,Arabica coffee,Coffee and coffee products,Coffee,1.0,1,0
+73,Japanese persimmon,Fruits,Tropical fruits,5.817,175.0,0
+75,Black crowberry,Fruits,Berries,1.07,1,0
+244,Rocket salad,Vegetables,Leaf vegetables,0.08,1,0
+80,Tartary buckwheat,Cereals and cereal products,Cereals,0.72,1,0
+84,Black huckleberry,Fruits,Berries,0.612,1,0
+86,Sunflower,Herbs and Spices,Oilseed crops,0.62,1,0
+91,Swamp cabbage,Vegetables,Leaf vegetables,0.3,1,0
+96,Grass pea,Pulses,Peas,0.61,1,0
+98,Lentils,Pulses,Lentils,0.81,1,0
+99,Garden cress,Vegetables,Leaf vegetables,0.76,1,0
+102,Mexican oregano,Herbs and Spices,Herbs,0.2,1,0
+104,Lupine,Pulses,Other pulses,0.76,1,0
+114,Medlar,Fruits,Pomes,0.773,15.0,0
+116,Mulberry,Fruits,Berries,0.68,1,0
+117,Black mulberry,Fruits,Berries,0.68,1,0
+120,Evening primrose,Herbs and Spices,Oilseed crops,0.926,1,0
+126,Millet,Cereals and cereal products,Cereals,0.75,1,0
+132,Scarlet bean,Pulses,Beans,0.48,1,0
+140,Pistachio,Nuts,Nuts,0.52,1,0
+142,Purslane,Herbs and Spices,Herbs,0.18,1,0
+162,Red raspberry,Fruits,Berries,0.52,1,0
+163,Black raspberry,Fruits,Berries,0.52,1,0
+164,Sorrel,Herbs and Spices,Herbs,0.637,1,0
+167,Summer savory,Herbs and Spices,Herbs,0.296,1,0
+168,Winter savory,Herbs and Spices,Herbs,0.296,1,0
+172,Cherry tomato,Vegetables,Fruit vegetables,1.02,35.0,0
+176,Rowanberry,Fruits,Berries,0.66,1,0
+177,Sorghum,Cereals and cereal products,Cereals,0.81,1,0
+181,Dandelion,Herbs and Spices,Herbs,0.23,1,0
+184,Linden,Herbs and Spices,Herbs,0.56,1,0
+185,Small-leaf linden,Herbs and Spices,Herbs,0.56,1,0
+575,Wheat,Cereals and cereal products,Cereals,0.79,1,0
+190,Sparkleberry,Fruits,Berries,0.63,1,0
+196,Common verbena,Herbs and Spices,Herbs,0.14,1,0
+198,Adzuki bean,Pulses,Beans,0.832,1,0
+199,Gram bean,Pulses,Beans,0.69,1,0
+200,Mung bean,Pulses,Beans,0.44,1,0
+201,Climbing bean,Pulses,Beans,0.44,1,0
+203,Muscadine grape,Fruits,Berries,0.39,9.5,0
+209,Bayberry,Fruits,Berries,0.63,1,0
+210,Elliott's blueberry,Fruits,Berries,0.63,0.3,0
+211,Canada blueberry,Fruits,Berries,0.63,0.3,0
+213,Buffalo currant,Fruits,Berries,0.47,1,0
+218,Deerberry,Fruits,Berries,0.63,1,0
+219,Ginseng,Herbs and Spices,Spices,0.455,1,0
+224,Longan,Fruits,Tropical fruits,0.519,12.5,0
+234,Rambutan,Fruits,Tropical fruits,0.36,40.0,0
+235,Red rice,Cereals and cereal products,Cereals,0.77,1,0
+241,Welsh onion,Herbs and Spices,Herbs,0.403,135.3,0
+242,Hard wheat,Cereals and cereal products,Cereals,0.81,1,0
+246,Triticale,Cereals and cereal products,Cereals,0.81,1,0
+251,Komatsuna,Vegetables,Cabbages,0.3,1,0
+252,Pak choy,Vegetables,Cabbages,0.3,1,0
+257,Jostaberry,Fruits,Berries,0.63,0.3,0
+258,Kai-lan,Vegetables,Cabbages,0.37,1,0
+266,Pineappple sage,Herbs and Spices,Herbs,0.14,1,0
+267,Skunk currant,Fruits,Berries,0.47,1,0
+270,Breakfast cereal,Cereals and cereal products,Cereal products,0.24,1,0
+274,Pasta,Cereals and cereal products,Cereal products,0.52,1,0
+275,Biscuit,Cereals and cereal products,Cereal products,0.5,3.4,0
+276,Sourdough,Cereals and cereal products,Doughs,0.245,1,0
+277,Spirit,Beverages,Distilled beverages,0.94,1,0
+280,Abalone,Aquatic foods,Mollusks,1.067,300.0,0
+281,Abiyuch,Fruits,Tropical fruits,0.96,114.0,0
+282,Acerola,Fruits,Tropical fruits,0.41,10.0,0
+283,Acorn,Nuts,Nuts,0.512,4.525,0
+284,Winter squash,Gourds,Gourds,0.87,1020.0,0
+285,Agar,Aquatic foods,Seaweed,0.81,1,0
+286,Red king crab,Aquatic foods,Crustaceans,0.96,2900.0,0
+287,Alfalfa,Herbs and Spices,Herbs,0.26,1,0
+289,Amaranth,Herbs and Spices,Herbs,0.82,1,0
+290,Arrowhead,Vegetables,Tubers,0.59,1,0
+291,Arrowroot,Vegetables,Tubers,0.54,1,0
+293,Atlantic herring,Aquatic foods,Fishes,0.59,680.0,0
+294,Atlantic mackerel,Aquatic foods,Fishes,0.59,1900.0,0
+295,Painted comber,Aquatic foods,Fishes,1.06,8200.0,0
+296,Atlantic pollock,Aquatic foods,Fishes,1.06,4300.0,0
+297,Atlantic wolffish,Aquatic foods,Fishes,1.06,9000.0,0
+298,Bamboo shoots,Vegetables,Shoot vegetables,0.64,1,0
+299,Striped bass,Aquatic foods,Fishes,1.06,9070.0,0
+301,Beech nut,Nuts,Nuts,0.545,2.0,0
+302,Beluga whale,Aquatic foods,Cetaceans,1.06,250.0,0
+303,Bison,Animal foods,Bovines,1.036,250.0,0
+305,Alaska blackfish,Aquatic foods,Fishes,1.06,200.0,0
+308,Northern bluefin tuna,Aquatic foods,Fishes,0.98,235000.0,0
+309,Bluefish,Aquatic foods,Fishes,1.06,7900.0,0
+310,Wild boar,Animal foods,Swine,0.872,250.0,0
+311,Bowhead whale,Aquatic foods,Cetaceans,1.06,250.0,0
+312,Breadfruit,Fruits,Tropical fruits,0.93,3150.0,0
+314,Rapini,Vegetables,Cabbages,0.168,1,0
+316,Buffalo,Animal foods,Bovines,1,250.0,0
+317,Burbot,Aquatic foods,Fishes,1.06,6500.0,0
+318,Giant butterbur,Vegetables,Other vegetables,0.396,1,0
+319,American butterfish,Aquatic foods,Fishes,1.06,566.0,0
+320,Butternut,Nuts,Nuts,0.87,1250.0,0
+321,Butternut squash,Gourds,Gourds,0.87,1,0
+323,Cardoon,Vegetables,Shoot vegetables,0.75,1,0
+325,Natal plum,Fruits,Tropical fruits,0.63,100.0,0
+326,Carob,Vegetables,Other vegetables,0.732,1,0
+327,Common carp,Aquatic foods,Fishes,1.04,8000.0,0
+329,Channel catfish,Aquatic foods,Fishes,1.04,1360.0,0
+333,Chia,Herbs and Spices,Other seeds,0.88,1,0
+336,Chinese chestnut,Nuts,Nuts,0.668,20.0,0
+338,Garland chrysanthemum,Vegetables,Leaf vegetables,0.104,1,0
+339,Cisco,Aquatic foods,Fishes,1.06,1800.0,0
+340,Nuttall cockle,Aquatic foods,Mollusks,1.06,1,0
+344,Common octopus,Aquatic foods,Mollusks,0.224,6500.0,0
+345,Corn salad,Vegetables,Leaf vegetables,0.3,1,0
+346,Cottonseed,Herbs and Spices,Oilseed crops,0.32,1,0
+347,Catjang pea,Pulses,Peas,0.3,1,0
+349,Squashberry,Fruits,Berries,0.63,1,0
+350,Atlantic croaker,Aquatic foods,Fishes,1.036,567.0,0
+351,Cusk,Aquatic foods,Fishes,1.06,3400.0,0
+352,Cuttlefish,Aquatic foods,Mollusks,1.06,6750.0,0
+353,Mule deer,Animal foods,Venison,1.1,250.0,0
+354,Devilfish,Aquatic foods,Fishes,1.06,6000.0,0
+355,Dock,Herbs and Spices,Herbs,0.564,1,0
+356,Dolphin fish,Aquatic foods,Fishes,1.06,14000.0,0
+357,Freshwater drum,Aquatic foods,Fishes,1.06,2725.0,0
+362,Freshwater eel,Aquatic foods,Fishes,1.036,907.0,0
+364,Elk,Animal foods,Venison,1.1,250.0,0
+365,Emu,Animal foods,Poultry,1,34500.0,0
+366,Oregon yampah,Vegetables,Root vegetables,0.23,1,0
+367,European anchovy,Aquatic foods,Fishes,1.06,20.0,0
+368,European chestnut,Nuts,Nuts,0.56,5.0,0
+369,Turbot,Aquatic foods,Fishes,1.06,14000.0,0
+370,Fireweed,Herbs and Spices,Herbs,0.1,1,0
+371,Florida pompano,Aquatic foods,Fishes,1.06,1400.0,0
+372,Ginkgo nuts,Herbs and Spices,Other seeds,0.656,1,0
+373,Greylag goose,Animal foods,Poultry,0.87,3300.0,0
+376,Groundcherry,Vegetables,Fruit vegetables,0.59,1,0
+377,Grouper,Aquatic foods,Fishes,1.06,250.0,0
+379,Haddock,Aquatic foods,Fishes,1.036,2040.0,0
+383,Horse,Animal foods,Equines,1.036,250.0,0
+386,Hyacinth bean,Pulses,Beans,0.82,1,0
+387,Irish moss,Aquatic foods,Seaweed,0.34,1,0
+388,Pacific jack mackerel,Aquatic foods,Fishes,0.59,550.0,0
+390,Japanese chestnut,Nuts,Nuts,0.56,5.0,0
+392,Jerusalem artichoke,Vegetables,Tubers,0.63,255.0,0
+393,Jujube,Fruits,Other fruits,0.49,15.0,0
+394,Jute,Vegetables,Leaf vegetables,0.37,1,0
+395,Kale,Vegetables,Cabbages,0.09,1,0
+397,King mackerel,Aquatic foods,Fishes,1.06,5670.0,0
+399,Lambsquarters,Vegetables,Leaf vegetables,0.76,1,0
+400,Leather chiton,Aquatic foods,Mollusks,1.06,1,0
+402,Common ling,Aquatic foods,Fishes,1.06,1550.0,0
+403,Lingcod,Aquatic foods,Fishes,1.06,24950.0,0
+408,White lupine,Pulses,Other pulses,0.7,1,0
+409,Malabar spinach,Vegetables,Leaf vegetables,0.19,1,0
+410,Mammee apple,Fruits,Tropical fruits,0.965,1250.0,0
+411,Purple mangosteen,Fruits,Tropical fruits,0.912,150.0,0
+412,Alpine sweetvetch,Vegetables,Root vegetables,0.23,1,0
+413,Milkfish,Aquatic foods,Fishes,1.06,375.0,0
+414,Monkfish,Aquatic foods,Fishes,1.06,9000.0,0
+416,Moth bean,Pulses,Beans,1.3,1,0
+417,Mountain yam,Vegetables,Tubers,0.63,3750.0,0
+418,Striped mullet,Aquatic foods,Fishes,1.04,4400.0,0
+422,New Zealand spinach,Vegetables,Leaf vegetables,0.24,1,0
+423,Nopal,Vegetables,Other vegetables,0.364,1,0
+424,Ocean pout,Aquatic foods,Fishes,1.06,3000.0,0
+425,North Pacific giant octopus,Aquatic foods,Mollusks,0.224,40500.0,0
+426,Ohelo berry,Fruits,Berries,0.63,1,0
+430,Ostrich,Animal foods,Poultry,0.572,250.0,0
+431,Spotted seal,Aquatic foods,Pinnipeds,1,250.0,0
+432,Pacific herring,Aquatic foods,Fishes,0.59,272.0,0
+434,Pacific rockfish,Aquatic foods,Fishes,1.06,770.0,0
+437,Common persimmon,Fruits,Tropical fruits,1.02,168.0,0
+438,Pheasant,Animal foods,Poultry,0.59,1200.0,0
+439,Northern pike,Aquatic foods,Fishes,1.03,1587.0,0
+440,Pili nut,Nuts,Nuts,0.508,1,0
+441,Colorado pinyon,Nuts,Nuts,0.508,200.0,0
+442,Pitanga,Fruits,Tropical fruits,0.73,3.9,0
+444,French plantain,Fruits,Tropical fruits,1.09,180.0,0
+445,American pokeweed,Vegetables,Shoot vegetables,0.39,9.5,0
+448,Prairie turnip,Vegetables,Root vegetables,0.69,1,0
+450,Quinoa,Herbs and Spices,Other seeds,0.72,1,0
+451,European rabbit,Animal foods,Lagomorphs,1,1750.0,0
+453,Rainbow smelt,Aquatic foods,Fishes,1.06,99.0,0
+454,Rainbow trout,Aquatic foods,Fishes,1.036,1500.0,0
+455,Malabar plum,Fruits,Tropical fruits,0.7,130.0,0
+456,Rose hip,Herbs and Spices,Herbs,0.536,2.25,0
+457,Roselle,Herbs and Spices,Herbs,0.24,1,0
+458,Orange roughy,Aquatic foods,Fishes,1.06,1150.0,0
+459,Sablefish,Aquatic foods,Fishes,1.06,4000.0,0
+460,Pink salmon,Aquatic foods,Fishes,0.57,1.927768,0
+461,Chum salmon,Aquatic foods,Fishes,0.57,4.76272,0
+462,Coho salmon,Aquatic foods,Fishes,0.57,4.53592,0
+463,Sockeye salmon,Aquatic foods,Fishes,0.57,4.30913,0
+464,Chinook salmon,Aquatic foods,Fishes,0.57,13.6078,0
+465,Atlantic salmon,Aquatic foods,Fishes,0.57,4.53592,0
+466,Salmonberry,Fruits,Berries,0.63,1,0
+467,Common salsify,Vegetables,Root vegetables,0.57,1,0
+470,Spanish mackerel,Aquatic foods,Fishes,1.06,8500.0,0
+471,Pacific sardine,Aquatic foods,Fishes,1.06,300.0,0
+473,Scup,Aquatic foods,Fishes,0.7,680.0,0
+474,Sea cucumber,Aquatic foods,Other aquatic foods,1.06,1450.0,0
+475,Steller sea lion,Aquatic foods,Pinnipeds,1.036,250.0,0
+476,Bearded seal,Aquatic foods,Pinnipeds,1.06,250.0,0
+477,Ringed seal,Aquatic foods,Pinnipeds,1,250.0,0
+478,Sea trout,Aquatic foods,Fishes,1.06,1150.0,0
+479,Sesbania flower,Vegetables,Other vegetables,0.08,1,0
+480,American shad,Aquatic foods,Fishes,1.06,3000.0,0
+481,Shark,Aquatic foods,Fishes,1.06,250.0,0
+482,Sheefish,Aquatic foods,Fishes,1.06,22000.0,0
+484,Sheepshead,Aquatic foods,Fishes,1.06,1600.0,0
+485,Hedge mustard,Herbs and Spices,Other seeds,0.43,1,0
+487,Snapper,Aquatic foods,Fishes,1.06,6000.0,0
+489,Spelt,Cereals and cereal products,Cereals,0.74,1,0
+490,Spirulina,Aquatic foods,Seaweed,0.47,1,0
+491,Squab,Animal foods,Poultry,0.592,396.0,0
+494,Greater sturgeon,Aquatic foods,Fishes,0.576,40823.0,0
+495,White sucker,Aquatic foods,Fishes,1.06,5216.0,0
+497,Pumpkinseed sunfish,Aquatic foods,Fishes,1.06,283.0,0
+498,Swordfish,Aquatic foods,Fishes,0.99,56699.0,0
+499,Taro,Vegetables,Root vegetables,0.44,500.0,0
+500,Teff,Herbs and Spices,Herbs,0.82,1,0
+501,Tilefish,Aquatic foods,Fishes,1.06,7937.0,0
+502,Mexican groundcherry,Vegetables,Fruit vegetables,0.59,1,0
+503,Towel gourd,Gourds,Gourds,0.4,1,0
+507,Walleye,Aquatic foods,Fishes,1.06,1360.0,0
+508,Alaska pollock,Aquatic foods,Fishes,1.06,793.0,0
+511,Whelk,Aquatic foods,Mollusks,0.63,75.0,0
+513,Broad whitefish,Aquatic foods,Fishes,1.06,8800.0,0
+514,Whitefish,Aquatic foods,Fishes,0.576,10000.0,0
+515,Whiting,Aquatic foods,Fishes,1.04,1700.0,0
+516,Wild rice,Cereals and cereal products,Cereals,0.77,1,0
+517,Tea leaf willow,Herbs and Spices,Herbs,0.23,1,0
+518,Winged bean,Pulses,Beans,0.728,1,0
+519,Yam,Vegetables,Tubers,0.63,3750.0,0
+520,Jicama,Vegetables,Root vegetables,0.55,659.0,0
+521,Yautia,Vegetables,Leaf vegetables,0.57,1,0
+522,Yellowfin tuna,Aquatic foods,Fishes,0.98,36287.0,0
+523,Yellowtail amberjack,Aquatic foods,Fishes,1.06,27215.0,0
+524,Pollock,Aquatic foods,Fishes,1.06,907.0,0
+525,Albacore tuna,Aquatic foods,Fishes,0.98,33000.0,0
+527,Atlantic halibut,Aquatic foods,Fishes,1.04,13607.0,0
+530,Smelt,Aquatic foods,Fishes,1.06,99.0,0
+532,Spiny lobster,Aquatic foods,Crustaceans,1.06,907.0,0
+534,Black-eyed pea,Pulses,Peas,1.1,1,0
+535,Deer,Animal foods,Venison,1.1,250.0,0
+538,Perciformes,Aquatic foods,Fishes,1.06,1,0
+540,Rabbit,Animal foods,Lagomorphs,0.93,2721.0,0
+542,Beefalo,Animal foods,Bovines,1.036,250.0,0
+548,Flatfish,Aquatic foods,Fishes,1.06,1,0
+550,Walrus,Aquatic foods,Pinnipeds,1.06,250.0,0
+551,Alaska wild rhubarb,Vegetables,Stalk vegetables,1.01,1,0
+552,Oriental wheat,Cereals and cereal products,Cereals,0.77,1,0
+553,Yardlong bean,Pulses,Peas,0.384,1,0
+555,Quail,Animal foods,Poultry,1.036,105.0,0
+556,Boysenberry,Fruits,Berries,0.556,1,0
+559,Rowal,Herbs and Spices,Other seeds,0.96,1,0
+560,Jew's ear,Vegetables,Mushrooms,0.42,1,0
+562,Shiitake,Vegetables,Mushrooms,0.408,1,0
+563,Purple laver,Aquatic foods,Seaweed,0.064,1,0
+564,Wakame,Aquatic foods,Seaweed,0.34,1,0
+565,Enokitake,Vegetables,Mushrooms,0.408,1,0
+566,Epazote,Herbs and Spices,Herbs,0.05,1,0
+567,Oyster mushroom,Vegetables,Mushrooms,0.36,1,0
+568,Cloud ear fungus,Vegetables,Mushrooms,0.12,1,0
+569,Maitake,Vegetables,Mushrooms,0.3,1,0
+570,Ostrich fern,Vegetables,Leaf vegetables,0.6,1,0
+571,Spot croaker,Aquatic foods,Fishes,1.036,793.0,0
+572,Sourdock,Herbs and Spices,Herbs,0.23,1,0
+573,Tinda,Gourds,Gourds,0.492,55.0,0
+574,Atlantic menhaden,Aquatic foods,Fishes,1.06,376.0,0
+577,Agave,Vegetables,Other vegetables,1.49,1,0
+578,Narrowleaf cattail,Vegetables,Other vegetables,0.23,1,0
+579,Jellyfish,Aquatic foods,Other aquatic foods,1.0,210.0,0
+580,Anchovy,Aquatic foods,Fishes,1.06,20.0,0
+581,Blue whiting,Aquatic foods,Fishes,1.06,500.0,0
+582,Carp bream,Aquatic foods,Fishes,1.06,3000.0,0
+583,Chanterelle,Vegetables,Mushrooms,0.23,1,0
+584,Sturgeon,Aquatic foods,Fishes,0.576,45359.0,0
+585,Charr,Aquatic foods,Fishes,1.06,1360.0,0
+588,Common dab,Aquatic foods,Fishes,1.06,1474.0,0
+589,Spiny dogfish,Aquatic foods,Fishes,1.06,3628.0,0
+590,Anatidae,Animal foods,Poultry,1.28,275.0,0
+591,Anguilliformes,Aquatic foods,Fishes,1.06,12000.0,0
+592,True frog,Aquatic foods,Amphibians,1.06,51.0,0
+593,Garfish,Aquatic foods,Fishes,1.06,200.0,0
+594,Gadiformes,Aquatic foods,Fishes,1.06,8500.0,0
+595,Mountain hare,Animal foods,Lagomorphs,1,3100.0,0
+596,Lake trout,Aquatic foods,Fishes,1.036,1814.0,0
+597,Lemon sole,Aquatic foods,Fishes,1.6,1600.0,0
+599,Lumpsucker,Aquatic foods,Fishes,1.06,5000.0,0
+602,Norway haddock,Aquatic foods,Fishes,1.036,1350.0,0
+604,Norway pout,Aquatic foods,Fishes,1.06,600.0,0
+605,Oil palm,Herbs and Spices,Oilseed crops,0.91,1,0
+607,Sago palm,Herbs and Spices,Oilseed crops,0.556,1,0
+608,Persimmon,Fruits,Tropical fruits,1.02,168.0,0
+609,Pikeperch,Aquatic foods,Fishes,1.06,4000.0,0
+611,Rock ptarmigan,Animal foods,Poultry,1,540.0,0
+612,Pacific ocean perch,Aquatic foods,Fishes,1.036,1814.0,0
+613,Black salsify,Vegetables,Root vegetables,0.57,1,0
+614,True seal,Aquatic foods,Pinnipeds,1,250.0,0
+615,Red algae,Aquatic foods,Seaweed,0.34,1,0
+616,Kombu,Aquatic foods,Seaweed,0.12,1,0
+617,Snail,Aquatic foods,Mollusks,0.5,3.0,0
+618,True sole,Aquatic foods,Fishes,1.6,1600.0,0
+619,Catfish,Aquatic foods,Fishes,1.04,1360.0,0
+620,Thistle,Vegetables,Root vegetables,0.76,1,0
+625,Conch,Aquatic foods,Mollusks,0.536,907.0,0
+627,Berry wine,Beverages,Fermented beverages,0.995,1,0
+639,Vodka,Beverages,Distilled beverages,0.95,1,0
+641,Ice cream,Confectioneries,Frozen desserts,0.54,1,0
+648,Vermouth,Beverages,Fortified wines,1.004,1,0
+650,Madeira wine,Beverages,Fortified wines,0.99,1,0
+651,Nougat,Confectioneries,Other confectioneries,0.59,1,0
+653,Toffee,Confectioneries,Other confectioneries,0.576,1,0
+654,Cake,Confectioneries,Desserts,0.9,4535.0,0
+655,Pizza,Dishes,Other dishes,0.47,900.0,0
+656,Ymer,Milk and milk products,Fermented milk products,1.035,1,0
+660,Pastry,Confectioneries,Desserts,0.245,1,0
+662,Chewing gum,Confectioneries,Candies,1.25,1,0
+663,Marzipan,Confectioneries,Other confectioneries,0.96,1,0
+664,Salad dressing,Baking goods,Dressings,0.99,1,0
+666,Salt,Baking goods,Seasonings,1.2,1,0
+669,Cream,Milk and milk products,Other milk products,1.012,1,0
+670,Sugar,Baking goods,Sugars,0.7,1,0
+671,Sausage,Dishes,Ground meat,0.78,67.0,0
+672,Meatball,Dishes,Ground meat,0.61,28.0,0
+674,Pate,Dishes,Ground meat,0.88,1,0
+677,Meat bouillon,Baking goods,Baking goods,1.01,1,0
+679,Whey,Milk and milk products,Other milk products,1.0025,1,0
+680,Casein,Milk and milk products,Other milk products,1.0632,1,0
+682,Leavening agent,Baking goods,Baking goods,0.93,1,0
+683,Marshmallow,Confectioneries,Candies,0.21,5.5,0
+684,Gelatin,Baking goods,Baking goods,1.14,1,0
+685,Water,Beverages,Waters,1.0,1,0
+691,Dumpling,Dishes,Other dishes,0.245,1,0
+692,Soup,Dishes,Other dishes,1.0,1,0
+695,Syrup,Baking goods,Baking goods,1.48,1,0
+697,Remoulade,Baking goods,Condiments,1.01,1,0
+698,Chocolate spread,Confectioneries,Spreads,1.25,1,0
+699,Fruit gum,Confectioneries,Candies,0.51,1,0
+702,Meringue,Confectioneries,Other confectioneries,0.81,1,0
+706,Cocoa butter,Cocoa and cocoa products,Cocoa products,0.9,1,0
+707,Cocoa powder,Cocoa and cocoa products,Cocoa products,1.365,1,0
+709,Chocolate,Cocoa and cocoa products,Cocoa products,1.325,1,0
+710,Hot chocolate,Cocoa and cocoa products,Cocoa products,1.06,1,0
+713,Kefir,Milk and milk products,Fermented milks,1.035,1,0
+717,Miso,Soy,Soy products,1.16,1,0
+718,Tofu,Soy,Soy products,1.1,1,0
+721,Zwieback,Cereals and cereal products,Leavened breads,0.245,800.0,0
+722,Roe,Aquatic foods,Roe,0.95,1,0
+724,Icing,Confectioneries,Other confectioneries,1.22,1,0
+725,Snack bar,Snack foods,Snack foods,0.8,43.94,0
+726,Green turtle,Aquatic foods,Other aquatic foods,1.06,250.0,0
+728,Burrito,Dishes,Tex-Mex cuisine,0.74,596.0,0
+729,Hamburger,Dishes,Sandwiches,1.032,85.0,0
+732,Taco,Dishes,Tex-Mex cuisine,0.464,91.0,0
+733,Tortilla,Cereals and cereal products,Flat breads,0.245,1,0
+734,Nachos,Dishes,Tex-Mex cuisine,0.56,1,0
+736,Salad,Dishes,Other dishes,0.3,1,0
+738,Dulce de leche,Confectioneries,Spreads,1.28,1,0
+739,Topping,Baking goods,Baking goods,0.252,1,0
+740,Sweet custard,Confectioneries,Milk desserts,1.012,1,0
+742,Egg roll,Dishes,Asian cuisine,0.528,89.0,0
+743,Heart of palm,Vegetables,Other vegetables,1.09,1,0
+745,Potato chip,Snack foods,Snack foods,0.14,1,0
+746,Tortilla chip,Snack foods,Snack foods,0.11,1,0
+747,Corn chip,Snack foods,Snack foods,0.17,1,0
+748,Hibiscus tea,Teas,Herbal teas,1.0,1,0
+749,Stew,Dishes,Other dishes,1.0,1,0
+750,Gelatin dessert,Confectioneries,Desserts,1.14,1,0
+751,Junket,Confectioneries,Milk desserts,0.29,1,0
+752,Falafel,Dishes,Other dishes,0.59,1,0
+753,Frybread,Dishes,Other dishes,0.245,1,0
+755,Lasagna,Dishes,Pasta dishes,0.96,1,0
+757,Pancake,Dishes,Other dishes,0.245,117.0,0
+758,Pectin,Baking goods,Baking goods,0.96,1,0
+759,Pudding,Confectioneries,Desserts,0.952,1,0
+760,Waffle,Dishes,Other dishes,0.245,62.0,0
+761,Soy milk,Soy,Soy products,1.03,1,0
+762,Meatloaf,Dishes,Ground meat,0.54,1,0
+764,Cocktail,Beverages,Alcoholic beverages,0.98,1,0
+765,Couscous,Dishes,Berber cuisine,0.73,1,0
+766,Bulgur,Cereals and cereal products,Cereal products,0.59,1,0
+768,Coffee mocha,Coffee and coffee products,Coffee products,1.0,1,0
+769,Chimichanga,Dishes,Mexican cuisine,0.616,183.0,0
+770,Semolina,Cereals and cereal products,Cereal products,0.704,1,0
+771,Tapioca pearl,Baking goods,Baking goods,0.64,1,0
+772,Tostada,Dishes,Mexican cuisine,0.516,1,0
+773,Quesadilla,Dishes,Mexican cuisine,0.4,180.0,0
+774,Baked potato,Dishes,Potato dishes,1.067,210.0,0
+775,Hot dog,Dishes,Sandwiches,0.64,45.0,0
+776,Spread,Baking goods,Baking goods,1.0,1,0
+777,Enchilada,Dishes,Mexican cuisine,0.52,1,0
+781,Ketchup,Baking goods,Condiments,1.15,1,0
+783,Adobo,Baking goods,Seasonings,1.148,1,0
+786,Horned melon,Gourds,Gourds,0.98,283.0,0
+787,Hushpuppy,Dishes,American cuisine,0.644,1,0
+788,Fruit juice,Beverages,Other beverages,1.0,1,0
+789,Relish,Baking goods,Condiments,1.04,1,0
+791,Fruit salad,Fruits,Fruit products,0.74,1,0
+792,Soy yogurt,Soy,Soy products,1.11,1,0
+795,Cold cut,Dishes,Ground meat,0.96,1,0
+796,Mixed nuts,Nuts,Nuts,0.556,1,0
+798,Babassu palm,Herbs and Spices,Oilseed crops,0.92,1,0
+800,Shea tree,Herbs and Spices,Oilseed crops,0.91,1,0
+801,Oil-seed Camellia,Herbs and Spices,Oilseed crops,0.75,1,0
+802,Ucuhuba,Herbs and Spices,Oilseed crops,0.92,168.0,0
+803,Phyllo dough,Baking goods,Baking goods,0.245,1,0
+804,Cooking oil,Baking goods,Baking goods,0.92,1,0
+805,Pie crust,Baking goods,Wrappers,0.245,1,0
+807,Pie,Confectioneries,Desserts,1.0,175.0,0
+808,Shortening,Fats and oils,Vegetable fats,0.87,1,0
+809,Soy cream,Soy,Soy products,1.03,1,0
+810,Ice cream cone,Baking goods,Wrappers,0.54,110.0,0
+811,Molasses,Baking goods,Baking goods,1.41,1,0
+813,Nance,Fruits,Tropical fruits,0.472,1,0
+815,Natto,Soy,Soy products,0.74,1,0
+816,Ravioli,Dishes,Pasta dishes,1.0,1,0
+817,Scrapple,Dishes,American cuisine,1.04,1,0
+819,Succotash,Dishes,American cuisine,0.81,1,0
+820,Tamale,Dishes,Latin American cuisine,0.245,1,0
+822,Rice cake,Dishes,Asian cuisine,0.26,1,0
+823,Tree fern,Vegetables,Other vegetables,0.6,1,0
+824,Evaporated milk,Milk and milk products,Other milk products,1.07,1,0
+825,Flour,Cereals and cereal products,Cereal products,0.791,1,0
+826,Akutaq,Confectioneries,Desserts,0.54,1,0
+829,Pita bread,Cereals and cereal products,Flat breads,0.245,800.0,0
+830,Focaccia,Cereals and cereal products,Flat breads,0.245,800.0,0
+831,Bagel,Cereals and cereal products,Leavened breads,0.245,800.0,0
+834,Piki bread,Cereals and cereal products,Flat breads,0.245,800.0,0
+835,French toast,Cereals and cereal products,Leavened breads,0.245,800.0,0
+838,Oat bread,Cereals and cereal products,Leavened breads,0.245,800.0,0
+839,Potato bread,Cereals and cereal products,Other breads,0.245,800.0,0
+840,Cornbread,Cereals and cereal products,Flat breads,0.245,800.0,0
+841,Corn grits,Cereals and cereal products,Cereal products,0.67,1,0
+842,Multigrain bread,Cereals and cereal products,Leavened breads,0.245,800.0,0
+843,Rice bread,Cereals and cereal products,Leavened breads,0.245,800.0,0
+844,Pan dulce,Cereals and cereal products,Leavened breads,0.245,800.0,0
+845,Raisin bread,Cereals and cereal products,Sweet breads,0.245,800.0,0
+846,Wonton wrapper,Baking goods,Wrappers,0.284,1,0
+848,Trail mix,Snack foods,Snack foods,0.63,1,0
+849,Greenthread tea,Teas,Herbal teas,0.23,1,0
+851,Vegetable juice,Beverages,Other beverages,1.02,1,0
+852,Horchata,Beverages,Other beverages,1.25,1,0
+853,Soft drink,Beverages,Other beverages,1.0,1,0
+855,Milkshake,Confectioneries,Frozen desserts,0.96,1,0
+856,Chocolate mousse,Confectioneries,Desserts,0.72,1,0
+858,Pupusa,Dishes,Latin American cuisine,0.245,1,0
+859,Empanada,Dishes,Latin American cuisine,0.4,100.0,0
+860,Arepa,Dishes,Latin American cuisine,0.5,100.0,0
+861,Ascidians,Aquatic foods,Other aquatic foods,1,1,0
+862,Gefilte fish,Dishes,Jewish cuisine,0.96,1,0
+863,Yellow pond-lily,Herbs and Spices,Herbs,0.23,1,0
+864,Fish burger,Dishes,Sandwiches,1.06,1,0
+866,Pot pie,Dishes,Other dishes,0.5,1,0
+867,Stuffing,Baking goods,Baking goods,0.85,1,0
+869,Fudge,Confectioneries,Candies,1.28,1,0
+870,Candy bar,Confectioneries,Candies,0.8,43.94,0
+871,Condensed milk,Milk and milk products,Other milk products,1.32,1,0
+872,Margarine,Fats and oils,Vegetable fats,0.96,1,0
+874,Hummus,Dishes,Levantine cuisine,1.04,1,0
+876,Potato puffs,Dishes,Potato dishes,0.53,1,0
+877,Potato gratin,Dishes,Potato dishes,1.016,1,0
+882,Chinese bayberry,Fruits,Berries,0.602,21.5,0
+907,Green zucchini,Gourds,Gourds,0.94,196.0,0
+916,Saskatoon berry,Fruits,Berries,0.76,3.7,0
+917,Nanking cherry,Fruits,Berries,0.76,3.7,0
+918,Japanese pumpkin,Gourds,Gourds,0.49,1250.0,0
+378,Guinea hen,Animal foods,Poultry,0.8,1150.0,0
+66,Cucurbita,Gourds,Gourds,0.66,1133.0,0
+970,Coconut milk,Milk and milk products,Other milk products,1.02,1,0
+973,Coconut oil,Herbs and Spices,Oilseed crops,0.9145,1,0
+703,Lard,Fats and oils,Animal fats,0.87,1,0
+633,Eggs,Eggs,Eggs,1.03,60.0,0
+836,Wheat bread,Cereals and cereal products,Leavened breads,0.245,800.0,0
+630,Liquor,Beverages,Distilled beverages,0.94,1,0
+958,White champagne,Beverages,Alcoholic beverages,0.998,1,0
+22,Oat,Cereals and cereal products,Cereals,0.3815,1,0
+966,Plain cream cheese,Milk and milk products,Fermented milk products,1.01,1,0
+681,Swiss cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+988,Greek feta cheese,Milk and milk products,Fermented milk products,1.0755,1,0
+632,Milk (Cow),Milk and milk products,Unfermented milks,1.035,1,0
+704,Other animal fat,Fats and oils,Animal fats,0.9196,1,0
+711,Dried milk,Milk and milk products,Other milk products,0.715,1,0
+712,Milk (Other mammals),Milk and milk products,Unfermented milks,1.035,1,0
+107,German camomile,Herbs and Spices,Herbs,1.02,1,0
+89,Hyssop,Herbs and Spices,Herbs,0.941,1,0
+56,"Mandarin orange (Clementine, Tangerine)",Fruits,Citrus,0.44,120.0,0
+109,Mentha,Herbs and Spices,Herbs,0.812,1,0
+57,Sweet orange,Fruits,Citrus,0.44,120.0,0
+165,Common sage,Herbs and Spices,Herbs,0.14,1,0
+404,American lobster,Aquatic foods,Crustaceans,0.61,4530.0,0
+307,Blue mussel,Aquatic foods,Mollusks,0.63,32.5,0
+606,True oyster,Aquatic foods,Mollusks,1.06,51.5,0
+600,"Scombridae (Bonito, Mackerel, Tuna)",Aquatic foods,Fishes,0.98,1,0
+526,Gadus (Common cod),Aquatic foods,Fishes,1.18,40000.0,0
+71,Globe artichoke,Vegetables,Shoot vegetables,0.71,350.0,0
+156,Redcurrant,Fruits,Berries,0.47,0.605,0
+135,Date,Fruits,Other fruits,0.49,1,0
+4,Kiwi,Fruits,Tropical fruits,0.57,125.0,0
+103,Lichee,Fruits,Tropical fruits,0.8,10.0,0
+78,Wax apple,	Fruits,	Tropical fruits,0.75,135.0,0
+1016,Cantaloupe melon,Gourds,Gourds,0.66,1133.0,0
+64,Muskmelon,Gourds,Gourds,0.66,1133.0,0
+950,Sour orange,Fruits,Citrus,0.44,120.0,0
+128,Passion fruit,Fruits,Tropical fruits,1.0,35.0,0
+147,European plum,Fruits,Drupes,0.7,66.0,0
+1000,Black raisin,Fruits,Berries,0.61,1,0
+23,Star fruit,Fruits,Tropical fruits,0.56,91.0,0
+189,Lowbush blueberry,Fruits,Berries,0.63,0.3,0
+192,American cranberry,Fruits,Berries,0.42,1.5,0
+20,Mugwort,Herbs and Spices,Herbs,0.927,1,0
+119,Sweet basil,Herbs and Spices,Herbs,0.1,1,0
+79,Common buckwheat,Cereals and cereal products,Cereals,0.72,1,0
+644,Liquorice,Confectioneries,Candies,1.3,1,0
+154,Garden rhubarb,Vegetables,Stalk vegetables,0.52,1,0
+183,Common thyme,Herbs and Spices,Herbs,0.29,1,0
+506,"Cattle (Beef, Veal)",Animal foods,Bovines,0.956,250.0,0
+549,Domestic pig,Animal foods,Swine,0.57,250.0,0
+483,"Sheep (Mutton, Lamb)",Animal foods,Ovis,1.49,250.0,0
+182,Cocoa bean,Cocoa and cocoa products,Cocoa,0.59,1,0
+638,Bean,Pulses,Beans,0.48,1,0
+1001,Cannellini bean,Pulses,Beans,1.1,1,0
+141,Common pea,Pulses,Peas,0.61,1,0
+85,Soy bean,Soy,Soy,0.75,1,0
+716,Soy sauce,Soy,Soy Products,1.08,1,0
+44,Pecan nut,Nuts,Nuts,0.481,1.8,0
+97,Sweet bay,Herbs and Spices,Herbs,1.18,1,0
+138,Pine nut,Nuts,Nuts,0.619,0.8,0
+215,Celery stalks,Vegetables,Stalk vegetables,0.508,1,0
+179,Cloves,Herbs and Spices,Spices,0.43,1,0
+122,Sweet marjoram,Herbs and Spices,Herbs,0.11,1,0
+124,Common oregano,Herbs and Spices,Herbs,0.2,1,0
+995,Green onion,Vegetables,Onion-family vegetables,0.403,70.44,0
+6,Garden onion,Vegetables,Onion-family vegetables,0.403,70.44,0
+32,Brussel sprouts,Vegetables,Cabbages,0.37,200.0,0
+28,Swede,Vegetables,Root vegetables,0.69,900.0,0
+223,Pepper (Capsicum),Vegetables,Fruit vegetables,0.47,135.0,0
+171,Garden tomato,Vegetables,Fruit vegetables,1.02,123.0,0
+25,Common beet,Vegetables,Leaf vegetables,1.16,120.0,0
+510,Wax gourd,Gourds,Gourds,0.74,850.0,0
+115,Bitter gourd,Gourds,Gourds,0.39,110.0,0
+322,Calabash,Gourds,Gourds,0.49,3000.0,0
+237,Swiss chard,Vegetables,Leaf vegetables,0.74,1,0
+987,Jalapeno pepper,Vegetables,Fruit vegetables,0.38,20.0,0
+127,Poppy,Herbs and Spices,Oilseed crops,0.6,1,0
+337,Chinese water chestnut,Vegetables,Other vegetables,0.668,20.0,0
+994,Red onion,Vegetables,Onion-family vegetables,0.403,70.44,0
+358,Mallard duck,Animal foods,Poultry,1.28,2041.0,0
+375,Greenland halibut/turbot,Aquatic foods,Fishes,1.06,14000.0,0
+380,Hippoglossus (Common halibut),Aquatic foods,Fishes,1.04,13600.0,0
+504,"Salmonidae (Salmon, Trout)",Aquatic foods,Fishes,0.57,4.76272,0
+531,"Clupeinae (Herring, Sardine, Sprat)",Aquatic foods,Fishes,1.06,226.0,0
+537,Percoidei (Bass and others),Aquatic foods,Fishes,1.06,1,0
+544,"Bivalvia (Clam, Mussel, Oyster)",Aquatic foods,Mollusks,1,51.5,0
+610,"Pleuronectidae (Dab, Halibut, Plaice)",Aquatic foods,Fishes,1.06,1474.0,0
+624,"Columbidae (Dove, Pigeon)",Animal foods,Poultry,0.592,310.0,0
+687,Milk (Human),Milk and milk products,Unfermented milks,1.035,1,0
+723,Cichlidae (Tilapia),Aquatic foods,Fishes,1.04,433.0,0
+756,Morchella (Morel),Vegetables,Mushrooms,0.28,1,0
+233,Pepper (Capsicum),Vegetables,Fruit vegetables,0.47,135.0,0
+700,Curry powder,Herbs and Spices,Herb and spice mixtures,0.43,1,0
+598,Clawed lobster,Aquatic foods,Crustaceans,0.61,907.0,0
+2001,Ginger Garlic Paste,,,,,1
+2002,Coriander Cumin Seed Powder,,,,,1
+2003,Chaat Masala,,,,,1
+2005,Chole Masala,,,,,1
+2006,Rasam Powder,,,,,1
+2007,Tandoori Masala,,,,,1
+2009,Panch Pharon Seed,,,,,1
+2010,Chicken Masala Powder,,,,,1
+2011,Goda Masala,,,,,1
+2012,Jal Jeera Powder,,,,,1
+2013,Ginger Garlic Coriander Leaves,,,,,1
+2014,Pulao Masala,,,,,1
+2015,Dabeli Masala,,,,,1
+2016,Cake Mix,,,,,1
+2017,Half Half,,,,,1
+2019,Vermicelli,,,,,1
+2021,Mayonnaise,,,,,1
+2022,Salt-Pepper,,,,,1
+2023,Croissant,,,,,1
+2024,Puff Pastry,,,,,1
+2025,Green Chutney,,,,,1
+2026,Cajun Seasoning,,,,,1
+2027,Vegetable Broth,,,,,1
+2028,Tandoori Paste,,,,,1
+2029,Mixed Vegetables,,,,,1
+2030,Salad Creme,,,,,1
+2031,Worcestershite Sauce,,,,,1
+2032,Coleslaw,,,,,1
+2033,Vegetable Stock,,,,,1
+2034,Mascarpone,,,,,1
+2036,Italian Seasoning,,,,,1
+2039,Hoisin Sauce,,,,,1
+2040,Barbeque Sauce,,,,,1
+2041,Sponge Cake,,,,,1
+2042,Baking Mix,,,,,1
+2043,Hot Sauce,,,,,1
+2044,Dried Mixed Fruit,,,,,1
+2045,Candied Mixed Fruit,,,,,1
+2046,Gulkand,,,,,1
+2051,Creole Seasoning,,,,,1
+2052,Chinese Five Spice Powder,,,,,1
+2053,Old Bay Seasoning,,,,,1
+2054,Adobo Sauce,,,,,1
+2055,Cracker Crumb,,,,,1
+2057,Ranch Dressing,,,,,1
+2058,Poultry Seasoning,,,,,1
+2059,Tahini,,,,,1
+2060,Herbe de Provence,,,,,1
+2061,Tart Shell,,,,,1
+2065,Bear,,,,,1
+2066,Whale,,,,,1
+2068,Seal,,,,,1
+2101,Apple Sauce,,,,,1
