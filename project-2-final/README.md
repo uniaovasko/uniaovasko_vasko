@@ -55,6 +55,7 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 > https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-2-final/slides/Projeto%20Parte%201.pdf
 
 ### Apresentação Final
+https://docs.google.com/presentation/d/1jfM3xf5ilCb6vDCz1gMDoEEN3Zl8DQFkD1mKsGavdRg/edit#slide=id.g29e71de871e_0_172
 > Coloque aqui o link para o PDF da apresentação final
 
 ## Modelo Conceitual
