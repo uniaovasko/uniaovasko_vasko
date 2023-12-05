@@ -186,6 +186,34 @@ Link Para Notebook Binder
 >   
 >   * Por meio do CulinaryDB é possível identificar as receitas de cada região e seus ingredientes. Com esses ingredientes, por meio do FooDB será identificado as estruturas bioquímicas mais frequentes de cada região. Essa pergunta é importante pois a bioquímica dos alimentos é uma importante ferramenta para estudo para saúde pública, pois identifica estruturas que são mais comuns e mais raras para os diferentes povos do mundo.
 
+~~~sql
+DROP VIEW IF EXISTS EstruturasFrequentes;
+CREATE VIEW EstruturasFrequentes AS
+SELECT 
+    r.regiao AS Regiao,
+    c.nome AS NomeComposto,
+    COUNT(*) AS Quantidade
+FROM 
+    Receitas r
+JOIN 
+    Ingredientes_receitas ir ON r.id = ir.id_receita
+JOIN 
+    Compostos_content cc ON ir.id_ingrediente = cc.id_ingrediente
+JOIN 
+    Compostos c ON cc.id_composto = c.id
+GROUP BY 
+    r.regiao, c.nome
+ORDER BY 
+    COUNT(*) DESC;
+    
+SELECT regiao, nomecomposto, quantidade
+FROM (
+SELECT regiao, nomecomposto, quantidade, ROW_NUMBER() OVER ( PARTITION BY regiao ORDER BY quantidade DESC) as rn
+FROM EstruturasFrequentes
+) x
+WHERE rn <= 3;
+~~~
+
 <img src="assets\TOP3MAISFREQUENTES.png" width="400px" height="auto">
 
 #### Pergunta/Análise 2
@@ -193,12 +221,54 @@ Link Para Notebook Binder
 >   
 >   * Mantendo o mesmo modelo da pergunta 1, com os ingredientes de cada receita é possível identificar os subgrupos a qual pertencem. Assim é possível analisar como cada região se relaciona com as produções alimentícias locais.
 
+~~~sql
+DROP VIEW IF EXISTS RegionVegetablePercentageRanking;
+CREATE VIEW RegionVegetablePercentageRanking AS
+SELECT
+    r.regiao AS nome_regiao,
+    COUNT(DISTINCT CASE WHEN i.grupo NOT IN ('Milk and milk products', 'Snack foods', 'Aquatic foods', 'Animal foods') THEN ir.id_ingrediente END) AS total_vegetais,
+    COUNT(DISTINCT ir.id_ingrediente) AS total_ingredientes,
+    COUNT(DISTINCT ir.id_receita) AS total_receitas,
+    (COUNT(DISTINCT CASE WHEN i.grupo NOT IN ('Milk and milk products', 'Snack foods', 'Aquatic foods', 'Animal foods') THEN ir.id_ingrediente END) * 100.0) / COUNT(DISTINCT ir.id_ingrediente) AS porcentagem_vegetais
+FROM
+    Receitas r
+JOIN
+    Ingredientes_receitas ir ON r.id = ir.id_receita
+JOIN
+    Ingredientes i ON ir.id_ingrediente = i.id
+GROUP BY
+    r.regiao
+ORDER BY
+    porcentagem_vegetais DESC;
+SELECT * FROM RegionVegetablePercentageRanking LIMIT 22;
+~~~
+
 <img src="assets\PORCENTAGEM VEGETAIS.png" width="400px" height="auto">
 
 #### Pergunta/Análise 3
 > * Quais regiões possuem a maior média de gorduras por receita?
 >   
 >   * Utilizando os valores nutricionais de cada ingrediente, fornecido pelo FooDB, é possível identificar a proporção de gordura contida na receita. Com essa informação será possível estabelecer uma média de lipídios em cada região. É uma pergunta importante visto que na atualidade a obesidade é um grande problema.
+
+~~~sql
+DROP VIEW IF EXISTS RegionFatAverageRanking;
+CREATE VIEW RegionFatAverageRanking AS
+SELECT
+    r.regiao AS nome_regiao,
+    AVG(nc.quantidade) AS media_gordura
+FROM
+    Receitas r
+JOIN
+    Ingredientes_receitas ir ON r.id = ir.id_receita
+JOIN
+    Nutrientes_content nc ON ir.id_ingrediente = nc.id_ingrediente
+WHERE
+    nc.id_nutriente = 1
+GROUP BY
+    r.regiao
+ORDER BY media_gordura DESC;
+SELECT * FROM RegionFatAverageRanking LIMIT 22;
+~~~
 
 <img src="assets\MÉDIA GORDURA.png" width="400px" height="auto">
 
