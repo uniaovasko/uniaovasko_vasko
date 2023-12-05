@@ -164,14 +164,7 @@ def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Alias
     return False
 ~~~
 
-> Aqui devem ser apresentadas as operações de construção do dataset:
-* extração de dados de fontes não estruturadas como, por exemplo, páginas Web
-* agregação de dados fragmentados obtidos a partir de API
-* integração de dados de múltiplas fontes
-* tratamento de dados
-* transformação de dados para facilitar análise e pesquisa
-
-Link Para Notebook Binder
+### Link Para Notebook Binder
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uniaovasko/uniaovasko_vasko/HEAD)
 
 ## Evolução do Projeto
