@@ -246,19 +246,22 @@ Link Para Notebook Binder
 > * Quais as estruturas bioquímicas mais frequentes em cada região?
 >   
 >   * Por meio do CulinaryDB é possível identificar as receitas de cada região e seus ingredientes. Com esses ingredientes, por meio do FooDB será identificado as estruturas bioquímicas mais frequentes de cada região. Essa pergunta é importante pois a bioquímica dos alimentos é uma importante ferramenta para estudo para saúde pública, pois identifica estruturas que são mais comuns e mais raras para os diferentes povos do mundo.
-> <img src="assets\COMPOSTOS MAIS FREQUENTES.png" width="400px" height="auto">
+
+<img src="assets\COMPOSTOS MAIS FREQUENTES.png" width="400px" height="auto">
 
 #### Pergunta/Análise 2
 > * Quais regiões possuem receitas com ingredientes majoritariamente vegetais?
 >   
 >   * Mantendo o mesmo modelo da pergunta 1, com os ingredientes de cada receita é possível identificar os subgrupos a qual pertencem. Assim é possível analisar como cada região se relaciona com as produções alimentícias locais.
-> <img src="assets\PORCENTAGEM VEGETAIS.png" width="400px" height="auto">
+
+<img src="assets\PORCENTAGEM VEGETAIS.png" width="400px" height="auto">
 
 #### Pergunta/Análise 3
 > * Quais regiões possuem a maior média de gorduras por receita?
 >   
 >   * Utilizando os valores nutricionais de cada ingrediente, fornecido pelo FooDB, é possível identificar a proporção de gordura contida na receita. Com essa informação será possível estabelecer uma média de lipídios em cada região. É uma pergunta importante visto que na atualidade a obesidade é um grande problema.
-> <img src="assets\MÉDIA GORDURA.png" width="400px" height="auto">
+
+<img src="assets\MÉDIA GORDURA.png" width="400px" height="auto">
 
 ### Perguntas/Análise Propostas mas Não Implementadas
 
@@ -276,16 +279,3 @@ Link Para Notebook Binder
 > * Quais as combinações de ingredientes mais frequentes em cada região?
 >   
 >   * Podemos simplesmente contar a frequência de cada combinação de ingredientes em todas as receitas de uma determinada região. Isso nos ajuda a compreender a cultura alimentar de cada região, destacando os ingredientes que são mais tradicionalmente combinados em pratos locais, e possivelmente auxiliar no desenvolvimento de novas receitas condizentes com o cardápio local
-
-### Análises propostas do banco de grafos
-
-#### Análise 1
-> * O que ingredientes considerados "hubs" têm em comum?
->   
->   * A primeira vista, os hubs que encontramos pareciam ser muito genéricos e pouco relacionados, porém, filtrando os ingredientes auxiliares, como sal e óleo de cozinha, pertencentes ao grupo "Baking goods", pudemos observar que o que os top 20 hubs tinham em comum é que todos são ingredientes com sabor considerado mais suave em seus respectivos grupos, revelando assim que essa é a melhor característica para sabores complementares
-> <img src="assets\TOP 20 HUBS SEM BAKING GOODS.jpeg" width="400px" height="auto">
-
-#### Análise 2
-> * Distância grande entre entre dois ingredientes implica em baixa compatibilidade/disponibilidade na mesma região?
->   
->   * Infelizmente, mesmo filtrando as receitas e nos restringindo apenas à uma região, as querries que desenvolvemos demoravam tempo demais para serem executadas e sempre acabavam falhando
