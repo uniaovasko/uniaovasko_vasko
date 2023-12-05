@@ -65,13 +65,12 @@ Contemc(_IDrec_, _IDic_)
 > <img src="assets/modelo-logico-grafos.jpeg" width="400px" height="auto">
 
 ## Dataset Publicado
-> Se ao tratar e integrar os dados originais foram produzidas novas bases relacionais ou de grafos, elencar essas bases.
 
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
-Densidade e peso unitário dos ingredientes | https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-2-final/data/processed/densidades.csv | Arquivo contendo as densidades e pesos médios coletados de diversas fontes para uso no projeto. Referencia id e nome do FooDB.
+Receitas e Nutrição por Região | https://github.com/uniaovasko/uniaovasko_vasko/tree/main/project-2-final/data/processed | Conjunto de arquivos permitindo análise nutricional e relacional entre regiões, suas receitas e seus respectivos ingredientes.
 -|-|-
-Receitas e Nutrição por Região | https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-2-final/ | Conjunto de arquivos permitindo análise nutricional e relacional entre regiões, suas receitas e seus respectivos ingredientes.
+Densidade e peso unitário dos ingredientes | https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-2-final/data/processed/densidades.csv | Arquivo contendo as densidades e pesos médios coletados de diversas fontes para uso no projeto. Referencia id e nome do FooDB.
 
 
 ## Bases de Dados
