@@ -247,7 +247,7 @@ Link Para Notebook Binder
 >   
 >   * Por meio do CulinaryDB é possível identificar as receitas de cada região e seus ingredientes. Com esses ingredientes, por meio do FooDB será identificado as estruturas bioquímicas mais frequentes de cada região. Essa pergunta é importante pois a bioquímica dos alimentos é uma importante ferramenta para estudo para saúde pública, pois identifica estruturas que são mais comuns e mais raras para os diferentes povos do mundo.
 
-<img src="assets\COMPOSTOS MAIS FREQUENTES.png" width="400px" height="auto">
+<img src="assets\TOP3MAISFREQUENTES.png" width="400px" height="auto">
 
 #### Pergunta/Análise 2
 > * Quais regiões possuem receitas com ingredientes majoritariamente vegetais?
