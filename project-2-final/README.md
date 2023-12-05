@@ -283,7 +283,7 @@ Link Para Notebook Binder
 > * O que ingredientes considerados "hubs" têm em comum?
 >   
 >   * A primeira vista, os hubs que encontramos pareciam ser muito genéricos e pouco relacionados, porém, filtrando os ingredientes auxiliares, como sal e óleo de cozinha, pertencentes ao grupo "Baking goods", pudemos observar que o que os top 20 hubs tinham em comum é que todos são ingredientes com sabor considerado mais suave em seus respectivos grupos, revelando assim que essa é a melhor característica para sabores complementares
-> <img src="assets\TOP 20 HUBS SEM BAKING GOODS.png" width="400px" height="auto">
+> <img src="assets\TOP 20 HUBS SEM BAKING GOODS.jpeg" width="400px" height="auto">
 
 #### Análise 2
 > * Distância grande entre entre dois ingredientes implica em baixa compatibilidade/disponibilidade na mesma região?
