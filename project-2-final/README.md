@@ -279,3 +279,17 @@ Link Para Notebook Binder
 > * Quais as combinações de ingredientes mais frequentes em cada região?
 >   
 >   * Podemos simplesmente contar a frequência de cada combinação de ingredientes em todas as receitas de uma determinada região. Isso nos ajuda a compreender a cultura alimentar de cada região, destacando os ingredientes que são mais tradicionalmente combinados em pratos locais, e possivelmente auxiliar no desenvolvimento de novas receitas condizentes com o cardápio local
+
+### Análises do modelo de grafos
+No modelo de grafos, criamos uma rede de ingredientes através de uma projeção nas receitas em que estes aparecem juntos, e utilizamos o cypher para explorar essa rede. Uma limitação, porém, foi a memória do ambiente online, assim, utilizamos apenas as receitas da região "USA" para as análises
+
+#### Análise 1
+> * O que ingredientes considerados "hubs" têm em comum?
+>   
+>   * Pudemos contabilizar o grau de cada nó, isto é, quantas arestas se ligam a ele, e assim rankear os top 20 hubs com mais conexões da nossa base se dados. Inicialmente, a resposta nos pareceu muito óbvia, pois ingredientes auxiliares como sal e óleo de cozinha dominavam o ranking. Portanto decidimos filtrar os ingredientes do grupo "Baking goods", e geramos a seguinte imagem. Podemos notar que uma característica em comum dos ingredientes hubs é que todos são considerados mais "suaves" em seus respectivos grupos, até mesmo as pimentas que aparecem
+<img src="assets\TOP 20 HUBS SEM BAKING GOODS.jpeg" width="400px" height="auto">
+
+#### Pergunta/Análise 2
+> * Distância grande entre entre dois ingredientes implica em baixa compatibilidade/disponibilidade na mesma região?
+>   
+>   * Inicialmente nossa ideia era utilizar algoritmos de calculo de distância para calcular as maiores possíveis em nossa rede, porém, o ambiente online cypher não possuia algoritmos muito eficientes para isso, e acabamos utilizando uma implementação de dijkstra presente no amibnete, porém, mesmo com o número reduzido de nós, nossa querry excedeu o tempo de execução limite e falhou
