@@ -122,7 +122,7 @@ def limpa_receita():
                 csv_writer.writerow([row[0], row[1], row[3]])
 ~~~
 
-* Extração e filtragem de ingredientes, suas quantidades e suas respectivas unidades de medidas utilizando regex. [regex.py](src/limpar.py)
+* Extração e filtragem de ingredientes, suas quantidades e suas respectivas unidades de medidas utilizando regex. [regex.py](src/volume.py)
 ~~~python
     with open('data/external/04_Recipe-Ingredients_Aliases.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
@@ -136,21 +136,8 @@ def limpa_receita():
     regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
 ~~~
 
-~~~python
-with open('data/external/04_Recipe-Ingredients_Aliases.csv') as csv_file:
-	csv_reader = csv.reader(csv_file, delimiter=',')
-	array = []
-	for row in csv_reader:
-	    array.append(row[1])
 
-    input_strings = array[1:]
-    result = test_strings(input_strings)
-#...
-regex = re.compile(r'((\d+/\d+)|(\d)+(\s\d+/\d+)?) (teaspoons?|tablespoons?|pounds?|cups?|\((\d+(\.\d+)?) (ounces?)\))?')
-~~~
-
-
-* Integração dos dados de um dataset com o outro usando um algoritmo de Hamming, na qual calcula a pontuação de correspondência para duas strings de dados. [ligador.py](src/limpar.py)
+* Integração dos dados de um dataset com o outro usando um algoritmo de Hamming, na qual calcula a pontuação de correspondência para duas strings de dados. [ligador.py](src/ligador.py)
 
 ~~~python
 def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Aliased Ingredient Name', cdb_id='Entity ID') -> bool:
