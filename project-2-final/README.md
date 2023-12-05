@@ -1,49 +1,4 @@
-# Modelo de Apresentação da Final
-
-# Estrutura de Arquivos e Pastas
-
-A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
-
-~~~
-├── README.md  <- arquivo apresentando a proposta
-│
-├── data
-│   ├── external       <- dados de terceiros em formato usado para entrada na transformação
-│   ├── interim        <- dados intermediários, e.g., resultado de transformação
-│   ├── processed      <- dados finais usados para a publicação
-│   └── raw            <- dados originais sem modificações
-│
-├── notebooks          <- Jupyter notebooks ou equivalentes
-│
-├── slides             <- arquivo de slides em formato PDF
-│
-├── src                <- fonte em linguagem de programação ou sistema (e.g., Orange, Cytoscape)
-│   └── README.md      <- instruções básicas de instalação/execução
-│
-└── assets             <- mídias usadas no projeto
-~~~
-
-Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
-
-## `data`
-
-Arquivos de dados usados no projeto, quando isso ocorrer.
-
-## `notebooks`
-
-Testes ou prototipos relacionados ao projeto que tenham sido executados no Jupyter. Se for SQL, deve ser colocado no notebook através do BeakerX.
-
-## `src`
-
-Projeto na linguagem escolhida caso não seja usado o notebook, incluindo todos os arquivos de dados e bibliotecas necessários para a sua execução. Só coloque código Pyhton ou Java aqui se ele não rodar dentro do notebook.
-
- Acrescente na raiz um arquivo `README.md` com as instruções básicas de instalação e execução.
-
-## `assets`
-
-Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. Coloque os arquivos aqui (mesmo que você mantenha uma cópia no diretório do código).
-
-# Modelo para Apresentação da Entrega Final do Projeto
+# Apresentação da Entrega Final do Projeto
 
 ## Motivação e Contexto
 
@@ -210,10 +165,6 @@ def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Alias
     return False
 ~~~
 
-
-
-> Coloque um link para o arquivo do notebook, programas ou workflows que executam as operações que você apresentar.
-
 > Aqui devem ser apresentadas as operações de construção do dataset:
 * extração de dados de fontes não estruturadas como, por exemplo, páginas Web
 * agregação de dados fragmentados obtidos a partir de API
@@ -221,24 +172,14 @@ def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Alias
 * tratamento de dados
 * transformação de dados para facilitar análise e pesquisa
 
-> Se for notebook, ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src` (por exemplo, arquivos do Orange ou Cytoscape). Se as operações envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
-
 Link Para Notebook Binder
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uniaovasko/uniaovasko_vasko/HEAD)
 
 ## Evolução do Projeto
 > Esse projeto se iniciou com as escolhas dos datasets que faziam sentido para as análises e pesquisas que queríamos desenvolver, com base nisso foram escolhidas as base de dados FoodDB e CulinaryDB. Na primeira versão os projeto foi apresentada uma modelagem conceitual e lógica baseado na perspectiva inicial de como seria desenvolver e aplicar as ferramentas necessárias para fazer as análises. Para a segunda versão do modelo lógico e conceitual foram feitas algumas poucas modificações que foram percebidas ao longo do desdobramento do projeto. No desenvolvimento da atividade, à princípio, tivemos dificuldades para fazer a filtragem e processamento dos elementos nas bases de dados, como por exemplo os ingredientes da base do CulinaryDB não seguiam um padrão de escrita, alguns ingredientes vinham acompanhado de quantidades e unidades de medidas, já outros não tinham essa configuração. Esse problema foi resolvido utilizando a ferramenta regex, além disso foi criada outro arquivo para armazena todas as informações de forma estruturada para serem usadas na análise. Outro entrave que tivemos no projeto foi fazer o "match" com as informações que tinhámos da base CulinaryDB com a base FoodDB em decorrência da diferença estrutural das informações entre elas, levando isso em consideração foram feitas várias consultas e buscas para superar esse obstáculo, a melhor ferramenta que encontrada foi o algoritmo chamado de Distância de Hamming. Esse algoritmo calcula uma pontuação de correspondência para duas strings de dados computando o número de posições as quais os caracteres diferem entre as strings de dados, para string de comprimento diferente, cada caractere adicional na string mais longa é contado como uma diferença entre as strings. Com esse método obtivemos uma bom percentual de match entre os ingredientes das duas bases mencionadas acima, porém alguns ingredientes obtiveram uma baixa pontuação no confronto dos dados, então tivemos que fazer o match manualmente com os ingredientes que sobraram da base CulinaryDB.
 
-> Relatório de evolução, descrevendo as evoluções na modelagem do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas, modelos e recortes de mudanças são bem-vindos.
-> Podem ser apresentados destaques na evolução dos modelos conceitual e lógico. O modelo inicial e intermediários (quando relevantes) e explicação de refinamentos, mudanças ou evolução do projeto que fundamentaram as decisões.
-> Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
-
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
-> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
-
-> Liste aqui as perguntas de pesquisa/análise e respectivas análises. Nem todas as perguntas precisam de queries que as implementam. É possível haver perguntas em que a solução é apenas descrita para demonstrar o potencial da base. Abaixo são ilustradas três perguntas, mas pode ser um número maior a critério da equipe.
->
 ### Perguntas/Análise com Resposta Implementada
 
 #### Pergunta/Análise 1
