@@ -224,6 +224,7 @@ def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Alias
 
 > Se for notebook, ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src` (por exemplo, arquivos do Orange ou Cytoscape). Se as operações envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 
+Link Para Notebook Binder
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uniaovasko/uniaovasko_vasko/HEAD)
 
 ## Evolução do Projeto
@@ -240,10 +241,6 @@ def checar_par(ing_cdb, ing_fdb, sem_par: dict[str, str], pares, cdb_nome='Alias
 > Liste aqui as perguntas de pesquisa/análise e respectivas análises. Nem todas as perguntas precisam de queries que as implementam. É possível haver perguntas em que a solução é apenas descrita para demonstrar o potencial da base. Abaixo são ilustradas três perguntas, mas pode ser um número maior a critério da equipe.
 >
 ### Perguntas/Análise com Resposta Implementada
-
-> As respostas às perguntas podem devem ser ilustradas da forma mais rica possível com tabelas resultantes, grafos ou gráficos que apresentam os resultados. Os resultados podem ser analisados e comentados. Veja um exemplo de figura ilustrando uma comunidade detectada no Cytoscape:
-
-> ![Comunidade no Cytoscape](images/cytoscape-comunidade.png)
 
 #### Pergunta/Análise 1
 > * Quais as estruturas bioquímicas mais frequentes em cada região?
