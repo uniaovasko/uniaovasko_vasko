@@ -116,6 +116,8 @@ Contemc(_IDrec_, _IDic_)
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
 Densidade e peso unitário dos ingredientes | https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-2-final/data/processed/densidades.csv | Arquivo contendo as densidades e pesos médios coletados de diversas fontes para uso no projeto. Referencia id e nome do FooDB.
+-|-|-
+Receitas e Nutrição por Região | https://github.com/uniaovasko/uniaovasko_vasko/blob/main/project-2-final/ | Conjunto de arquivos permitindo análise nutricional e relacional entre regiões, suas receitas e seus respectivos ingredientes.
 
 
 ## Bases de Dados
